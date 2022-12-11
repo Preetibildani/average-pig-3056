@@ -30,7 +30,7 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/omkundu/affable-fang-3484
+  git clone https://github.com/Preetibildani/average-pig-3056.git
 ```
 
 Go to the project directory
