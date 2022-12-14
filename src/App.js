@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Hotels from './Hotels/Hotels';
+
+import MainRoutes from './Pages/MainRoutes';
 
 function App() {
   return (
-    <div className="App">
-      <Hotels />
-      
-    </div>
+    <div>
+   <MainRoutes/>
+   </div>
+>>>>>>> 9cb54180eb18bfe0ffe1ef95df8ec938670f1d99
   );
 }
 
