@@ -34,6 +34,6 @@ export const login = (payload) => (dispatch) => {
             dispatch(postLoginSuccess(r.data.token))
         })
         .catch((e) => {
-            dispatch(postLoginFailure())        
+            dispatch(postLoginFailure())
         })
 }

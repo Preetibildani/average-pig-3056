@@ -9,6 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./Redux/store";
 import { ChakraProvider } from "@chakra-ui/react";
+import CreateAccount from "./Pages/SignUp/SignUp";
 // import { ChakraProvider } from '@chakra-ui/react';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
  <BrowserRouter>
   <Provider store={store}>
     <App />
+
     </Provider>
   </BrowserRouter>
 
