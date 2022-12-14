@@ -33,7 +33,7 @@ export default function CreateAccount() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
-  const [userType, setUserType] = useState("");
+const [surname,setSurname]=useState("")
 
 
   const GotoHome=()=>{
@@ -105,7 +105,7 @@ export default function CreateAccount() {
     setEmail("");
     setPassword("");
     setUserName("");
-  
+  setSurname("")
   }
 
   return (
@@ -185,9 +185,9 @@ export default function CreateAccount() {
 <br />
 
             <Input
-              onChange={(e) => setUserName(" "+e.target.value)}
+              onChange={(e) => setSurname(e.target.value)}
               placeholder="Surname"
-              value={userName}
+           value={surname}
               w={"100%"}
               h={"40px"}
               border={`2px solid`}
@@ -245,8 +245,8 @@ export default function CreateAccount() {
               disabled={
                 email === "" ||
                 password === "" ||
-                userName === "" ||
-                userType === ""
+                userName === "" 
+             
               }
             >
               Create Account
