@@ -59,11 +59,11 @@ import {Box, Button,Flex,FormControl,Heading,Hide,Input,InputGroup,InputRightEle
         onChange={(e) => setUserpassword(e.target.value)}
       />
 
-      <Heading m={5} align="center" fontSize={20} color={"teal"}>
+      <Heading w={{ lg: '100%', sm: '50%', md: '75%' }} m={5} align="center" fontSize={20} color={"teal"}>
         forgot password
       </Heading>
 
-      <Button m={5}  w={80} type="submit">
+      <Button  m={5}  w={80} type="submit">
         LOGIN
       </Button>
     </form>
