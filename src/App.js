@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import MainRoutes from './Pages/MainRoutes';
 
@@ -9,5 +9,4 @@ function App() {
    </div>
   );
 }
-
 export default App;
