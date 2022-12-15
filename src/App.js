@@ -1,6 +1,5 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
 import MainRoutes from './Pages/MainRoutes';
 
 function App() {
@@ -8,8 +7,6 @@ function App() {
     <div>
    <MainRoutes/>
    </div>
-
   );
 }
-
 export default App;

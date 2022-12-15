@@ -5,12 +5,10 @@ import { AiFillFacebook } from "react-icons/ai";
 import { useDispatch, shallowEqual, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { SignUpFunction } from "../../Redux/SignUpReducer/action";
-import { ArrowBackIcon } from "@chakra-ui/icons";
-
-import logo from "../../Images/Logo.png";
-
+import { ArrowBackIcon } from '@chakra-ui/icons'
+import logo from "../../Images/Logo.png"
 import {
-  Image,
+    Image,
   Box,
   Button,
   Checkbox,
@@ -32,11 +30,10 @@ export default function CreateAccount() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
-  const [surname, setSurname] = useState("");
-
-  const GotoHome = () => {
-    navigate("/");
-  };
+const [surname,setSurname]=useState("")
+  const GotoHome=()=>{
+    navigate("/")
+  }
   const { userData, successfullyCreated, createAccountError } = useSelector(
     (state) => {
       return {
@@ -52,7 +49,6 @@ export default function CreateAccount() {
   const navigate = useNavigate();
   const toaster = useToast();
   const [isLargerThan992] = useMediaQuery("(min-width: 992px)");
-
   useEffect(() => {
     if (successfullyCreated) {
       toaster({
@@ -60,20 +56,19 @@ export default function CreateAccount() {
         duration: 2000,
         position: "top",
         status: "success",
-        isClosable: true,
+       isClosable: true,
       });
       setTimeout(() => {
         navigate("/login");
       }, 2000);
     }
   }, [successfullyCreated]);
-
   useEffect(() => {
+
     setTimeout(() => {
       setIsLoading(false);
     }, 500);
   }, []);
-
   useEffect(() => {
     if (createAccountError) {
       toaster({
@@ -89,6 +84,7 @@ export default function CreateAccount() {
   function SendSignInRequest() {
     dispatch(
       SignUpFunction({
+
         sname: surname,
         fname: userName,
         password: password,
@@ -100,7 +96,6 @@ export default function CreateAccount() {
     setUserName("");
     setSurname("");
   }
-
   return (
     <>
       {isLoading ? (
@@ -113,8 +108,7 @@ export default function CreateAccount() {
             size="lg"
           />
         </Flex>
-      ) : (
-        <>
+      ) : (  <>
           <Flex border="1px" color="black" alignItems="center">
             <ArrowBackIcon color="blue" boxSize={6} onClick={GotoHome} />
             <Image marginLeft="41%" boxSize="16%" src={logo} alt="" />
@@ -260,8 +254,11 @@ export default function CreateAccount() {
               </Box>
             </FormControl>
           </Flex>
+
         </>
       )}
     </>
   );
+
 }
+
