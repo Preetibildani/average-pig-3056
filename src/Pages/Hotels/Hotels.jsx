@@ -43,7 +43,7 @@ const Hotels = () => {
 
   //
 
-  console.log(data);
+  
 
   return (
     <Box>
