@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import Login from './AdminPage/Login'
+import Login from './AdminPage/Login
 import UserLogin from './Login/Login'
 import CreateAccount from './SignUp/SignUp'
 import Hotels from './Hotels/Hotels';
