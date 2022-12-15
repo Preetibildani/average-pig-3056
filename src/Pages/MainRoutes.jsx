@@ -4,9 +4,12 @@ import Login from './AdminPage/Login'
 import UserLogin from './Login/Login'
 import CreateAccount from './SignUp/SignUp'
 import Hotels from './Hotels/Hotels';
+
 const MainRoutes = () => {
     return (
       <Routes>
+        <Route path='/login' element={<UserLogin />} />
+        <Route path='/SignUp' element={<CreateAccount  />} />
       <Route path='/' element={<Login/>}/>
         <Route path='/login' element={<UserLogin />} />
         <Route path='/SignUp' element={<CreateAccount  />} />

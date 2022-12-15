@@ -18,9 +18,8 @@ export const Loginfunction = (data) => (dispatch) => {
 
 export const SignUpFunction = (data) => (dispatch) => {
   dispatch({ type: CREATE_REQUEST });
-
   axios
-    .post("https://636b1db9b10125b78feba23b.mockapi.io/profile", data)
+    .post("https://api-knw0.onrender.com/profile", data)
     .then((response) => {
       dispatch({ type: CREATE_SUCCESS, payload: response.data });
       console.log(response);
