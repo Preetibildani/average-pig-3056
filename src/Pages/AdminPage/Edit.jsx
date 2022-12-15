@@ -8,7 +8,7 @@ import styles from "../AdminPage/AdminPage.module..css";
 
 
 const Edit = () => {
-  var name = JSON.parse(localStorage.getItem("profile"));
+  var name = JSON.parse(localStorage.getItem("username"));
   const dispatch = useDispatch();
   const products  = useSelector((store) => {
     return store.AppReducer.data;
@@ -18,9 +18,9 @@ const Edit = () => {
   console.log(id,data,products)
   const [product, setProduct] = useState({
     available: true,
-    category: data[0].category,
-    description:data[0].description,
-    image: data[0].image,
+   
+    
+    imag1: data[0].image,
     price:data[0].price,
     rating: { rate: 3.9, count: 120 },
     stores: 9,

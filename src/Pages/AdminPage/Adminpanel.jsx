@@ -1,5 +1,4 @@
 import { Box, Button, Image, Input, Select } from "@chakra-ui/react";
-
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,7 +8,7 @@ import styles from "../AdminPage/AdminPage.module..css";
 // import {addNewData}
 import { Filter } from "./Filter";
 const Adminpanel = () => {
-  var name = JSON.parse(localStorage.getItem("profile"));
+  var name = JSON.parse(localStorage.getItem("username"));
   const delhiData = useSelector((store) => {
     return store.AppReducer.data;
   });
@@ -199,9 +198,9 @@ const Adminpanel = () => {
                               color: "red",
                               border: "2px solid red ",
                             }}
-                            onClick={() =>
-                              dispatch(deleteDataFromCart(item.id)).then(() =>
-                                dispatch(getdata())
+       onClick={() =>
+          dispatch(deleteDataFromCart(item.id)).then(() =>
+           dispatch(getdata())
                               )
                             }
                             ml="70px">
