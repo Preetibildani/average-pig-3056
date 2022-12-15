@@ -93,9 +93,9 @@ const Hotels = () => {
                 <Flex alignItems="center">
                   {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
                   <Image
-                    zIndex={1}
-                    w="19em"
-                    h="15em"
+                    // zIndex={1}
+                    w="15em"
+                    h="12em"
                     borderTopLeftRadius="20px"
                     borderBottomLeftRadius="20px"
                     // border="1px solid"
@@ -104,20 +104,20 @@ const Hotels = () => {
                   />
                   {/* <ChevronRightIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
                 </Flex>
-                <Box ml={2}>
-                  <Heading fontWeight="500" fontSize="20px">
+                <Box  ml={2} w='60%'>
+                  <Heading fontWeight="500" fontSize="20px" >
                     {el.heading1}
                   </Heading>
 
                   <Text>{el.city}</Text>
                   <Flex gap={3}>
-                    <Box mt={5} border="1px solid" w="70%">
-                      <Text>{el.text1}</Text>
-                      <Text>{el.text2}</Text>
-                      <Text color="green">{el.text3}</Text>
-                      <Text color="green">{el.text4}</Text>
+                    <Box   w="70%" >
+                      <Text fontSize={14} color='#343b53' >{el.text1}</Text>
+                      <Text fontSize={14} color='#343b53' >{el.text2}</Text>
+                      <Text color="teal" fontSize={13.5} fontWeight='semi-bold' mt='1'>{el.text3}</Text>
+                      <Text color="teal" fontSize={13.5} fontWeight='semi-bold'>{el.text4}</Text>
                       <Box>
-                        <Text>
+                        <Text color='#343b53 ' fontWeight='bold'fontSize={13}>
                           {el.rating} {el.review} {el.no_of_reviews}
                         </Text>
                       </Box>
@@ -127,21 +127,25 @@ const Hotels = () => {
                       position='absolute'                    
                       right={128}
                       border="1px solid"
-                        mt="5em"
-                        w="12em"
-                        h="1.5em"
+                        mt="2em"
+                        w="11em"
+                        
                         textAlign="center"
                         bg="teal"
                         color="white"
                         fontWeight="bold"
                         borderRadius="50px"
                       >
-                        <Text fontSize="14px">{el.heading3}</Text>
+                        <Text fontSize="14px" >{el.heading3}</Text>
                        
                       </Box>
                     )}
-                    <Heading fontSize={'20'}>{el.price1}</Heading>
-                    <Heading>{el.price2}</Heading>
+                    <Box mt={'4em'} position='absolute' right={122}>
+
+                    <Heading fontSize={'20'} mr={2}>{el.price1}</Heading>
+                    <Text fontSize='13px' mr='2'textAlign='end'>per night </Text>
+                    <Text textAlign='end' mr={2} fontSize='13px'>{el.price2} total </Text>
+                    </Box>
                   </Flex>
                 </Box>
               </Flex>
