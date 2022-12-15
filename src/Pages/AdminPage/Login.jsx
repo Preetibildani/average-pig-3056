@@ -1,10 +1,7 @@
 
-
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { login } from "../../Redux/AuthReducer/action";
-import axios from "axios";
-import {Box, Button,Flex,FormControl,Heading,Hide,Input,InputGroup,InputRightElement,Show,Stack,} from "@chakra-ui/react";
+import {Box, Button,Heading,Input,Stack,} from "@chakra-ui/react";
     export default function Login() {
      
        
@@ -13,7 +10,7 @@ import {Box, Button,Flex,FormControl,Heading,Hide,Input,InputGroup,InputRightEle
         const [userId, setUserId] = useState("");
         const [userpassword, setUserpassword] = useState("");
        
-        //  const navigate = useNavigate();
+          const navigate = useNavigate();
         const handleSubmitU = (e) => {
             //Default
             e.preventDefault();
@@ -21,11 +18,17 @@ import {Box, Button,Flex,FormControl,Heading,Hide,Input,InputGroup,InputRightEle
             
               if (userId === "travel@gmail.com" && userpassword === "travelmojo") {
                 alert("successfull");
-                //  navigate("/")
+                  navigate("/admin")
+                setName("")
+                setUserId("")
+                setUserpassword("")
                 localStorage.setItem("username", JSON.stringify(name));
                 // window.location.href = "index.html"
               } else {
                 alert("user dose not exist");
+                setName("")
+                setUserId("")
+                setUserpassword("")
               }
             }
           
