@@ -20,7 +20,6 @@ import {
   FormHelperText,
   Heading,
   Input,
-  Select,
   Spinner,
   Text,
   useMediaQuery,

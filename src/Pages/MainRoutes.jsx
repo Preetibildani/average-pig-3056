@@ -9,10 +9,10 @@ import Hotels from './Hotels/Hotels';
 const MainRoutes = () => {
     return (
       <Routes>
-         <Route path='/' element={<Login/>}/>
         <Route path='/login' element={<UserLogin />} />
         <Route path='/SignUp' element={<CreateAccount  />} />
         <Route path='/hotels' element={<Hotels/>}/>
+        <Route path='/adminlogin' element={<Login/>}/>
       <Route path='/admin' element={<Adminpanel/>}/>
       </Routes>
     )
