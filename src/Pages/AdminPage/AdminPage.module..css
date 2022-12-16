@@ -18,10 +18,12 @@
     }
     #admin_heading{
     font-size: 55px;
-    font-weight: 800;
-    color: #FF9F29;
+    font-weight: 500;
+    color: #700d6e;
     text-align: center;
-    margin-left: 20%;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  
     }
     .add_product_wrapper{
         /* border: 2px solid red; */

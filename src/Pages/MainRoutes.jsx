@@ -7,9 +7,11 @@ import CreateAccount from './SignUp/SignUp'
 import Hotels from './Hotels/Hotels';
 import Edit from './AdminPage/Edit'
 
+
 const MainRoutes = () => {
     return (
       <Routes>
+      
         <Route path='/login' element={<UserLogin />} />
         <Route path='/SignUp' element={<CreateAccount  />} />
         <Route path='/hotels' element={<Hotels/>}/>
