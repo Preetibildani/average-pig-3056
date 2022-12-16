@@ -51,9 +51,9 @@ const Adminpanel = () => {
             alt=""
           />
         </Link> */}
-        <h3 id={styles.admin_heading}>
+        <h3   id={"admin_heading"}>
           Welcome{" "}
-          <span style={{ color: "green", fontStyle: "italic" }}>{name}</span> to
+          <span style={{ color: "#68a68c", fontStyle: "italic" }}>{name}</span> to
           Admin Panel
         </h3>
       </div>
@@ -139,31 +139,29 @@ const Adminpanel = () => {
         </Box>
 
         <Box
-          style={{ overflow: "scroll" }}
+          style={{  overflow: "scroll" }}
           w={{ lg: "50%", md: "100%", sm: "100%" }}
-          h="580px"
+          h="560px"
           scrollBehavior="auto"
         >
-          <Button>DATA </Button>
-
+        
           <Box >
             
               {hoteldata.length > 0 &&
                 hoteldata.map((item) => {
                   return (
-                    <Box boxShadow='dark-lg' marginBottom={'10px'} p='6' rounded='md' bg='white' key={item.id}>
+                    <Box  marginBottom={'10px'} p='6' rounded='md' bg='white' key={item.id}>
                       <Box>
                         <Box>
                           <Box display={"flex"} justifyContent="space-around" p="10px">
                             {""}
-                            <Image src={item.img2} alt="" w="25%" />{" "}
+                            <Image justifyContent={"center"} src={item.img2} alt="" w="25%" />{" "}
                             <Box>
                               {" "}
                               
                               <div>{item.heading1}</div>
                               <div>{item.headig2}</div>
                               <div>{item.city}  </div>
-                              <div>₹{item.price1} </div>
                               <div>₹{item.price2} </div>
                             </Box>{" "}
                           </Box>

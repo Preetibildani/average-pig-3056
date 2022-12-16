@@ -20,7 +20,7 @@ export const Filter = () => {
         const queryParams = {
             params: {
                 city: city,
-                _sort: searchParams.get("sortBy") && "price",
+                _sort: searchParams.get("sortBy") && "price2",
                 _order: searchParams.get("sortBy")
             }
         }
@@ -34,6 +34,10 @@ const [searchParams, setSearchParams] = useSearchParams();
     const HandleFilter = (e) => {
         const option = e.target.value
         let newcity = [...city];
+
+        if(newcity.length>0){
+            newcity=[]
+        }
         if (newcity.includes(option)) 
         {
             newcity.splice(newcity.indexOf(option), 1)
@@ -56,51 +60,28 @@ const [searchParams, setSearchParams] = useSearchParams();
         setSearchParams(params);
     }, [city, setSearchParams, sortBy])
   return (
-    <div>
+    
 
-<Box display={"flex"} justifyContent="right" mr={{lg:"130px",sm:"0px"}}>
+<Box   display={"flex"} justifyContent="right"  mr={{lg:"130px",sm:"0px"}}>
 
-
-    {/* <h2>Filter</h2> */}
-    <div>
-        <input type="checkbox" value='Delhi'
-            onChange={HandleFilter}
-            defaultChecked={city.includes('Delhi')} />
-        <label >Delhi</label>
-    </div>
-    <div>
-        <input type="checkbox" value='Goa'
-            defaultChecked={city.includes('Goa')}
-            onChange={HandleFilter} />
-        <label >Goa</label>
-    </div>
-    <div>
-        <input type="checkbox" value='Mumbai'
-            defaultChecked={city.includes('Mumbai')}
-            onChange={HandleFilter} />
-        <label >Mumbai</label>
-    </div>
-    <div>
-        <input type="checkbox" value='Pune'
-            defaultChecked={city.includes('Pune')}
-            onChange={HandleFilter} />
-        <label >pune</label>
-    </div>
-    {/* <div>
-            <Select  name="city"   onChange={HandleFilter} 
-            defaultChecked={city.includes('delhi')} >
+   
+    <Box>
+    <Select   name="city"   onChange={HandleFilter}  >
+            {/* defaultChecked={city.includes('hoteldata')} */}
               <option value="">Select city</option>
-              <option value="pune">Pune</option>
-              <option value="delhi">Delhi</option>
-              <option value="goa">Goa</option>
-              <option value="mumbai">Mumbai </option>
+              <option   value="Pune">Pune</option>
+              <option   value="Delhi">Delhi</option>
+              <option value="Goa">Goa</option>
+              <option   value="Mumbai">Mumbai </option>
             </Select>
+    </Box>
+            
     
-    </div> */}
-                  
+         
     
-    <Box border={"1px solid red"} display={"flex"} onChange={HandleSortBy}>
+    <Box  padding={"10px 100px 0px 20px"} onChange={HandleSortBy}>
     <h2>Sort</h2>
+    <hr></hr>
         <div>
             <input type="radio" value="asc" name='sortBy'
                 defaultChecked={sortBy === "asc"} />
@@ -109,11 +90,11 @@ const [searchParams, setSearchParams] = useSearchParams();
         <div>
             <input type="radio" value="desc" name='sortBy'
                 defaultChecked={sortBy === "desc"} />
-            <label>Desc</label>
+            <label>Dec</label>
         </div>
     </Box>
 
 </Box>
-    </div>
+ 
   )
 }

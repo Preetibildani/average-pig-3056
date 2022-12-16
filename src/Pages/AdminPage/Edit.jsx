@@ -103,19 +103,6 @@ const Edit = () => {
                 }
               />
             </Box>
-           
-            <Box>
-              <Input
-               
-                type="number"
-                value={product.price1}
-                name={product.price1}
-                onChange={(e) =>
-                  setProduct({ ...product, price1: e.target.value })
-                }
-                placeholder="price1"
-              />
-            </Box>
             <Box>
               <Input
                 type="number"
