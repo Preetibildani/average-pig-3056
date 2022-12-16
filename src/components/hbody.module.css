@@ -41,7 +41,6 @@
     margin: auto;
     margin-bottom: 80px;
     position: relative;
-    border: 2px solid red;
 }
 .Card_Img > img{
     border-radius: 5px;
@@ -49,7 +48,7 @@
 }
 .Card_Img > div{
     position: absolute;
-    top: 7%;
+    top: 10%;
     left: 15%;
     color: white;
     width: 400px;

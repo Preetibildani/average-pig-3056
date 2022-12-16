@@ -1,5 +1,5 @@
 import {Container, SimpleGrid, Box, Link, Text, Card, Image, Divider} from "@chakra-ui/react";
-export const Footer1 = () => {
+ const Footer1 = () => {
 
 const LinkStyle = {
     fontSize : "small"
@@ -62,3 +62,4 @@ const BoxStyle = {
 </Container>
 </>);
 }
+export default Footer1;
