@@ -5,8 +5,12 @@ import Login from './AdminPage/Login'
 import UserLogin from './Login/Login'
 import CreateAccount from './SignUp/SignUp'
 import Hotels from './Hotels/Hotels';
+<<<<<<< HEAD
 import Edit from './AdminPage/Edit';
 
+=======
+import Edit from './AdminPage/Edit'
+>>>>>>> 7eb6e8157d2b1680cf87355b1cd0cbcaecc6ae35
 
 const MainRoutes = () => {
     return (
