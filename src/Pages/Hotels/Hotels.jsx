@@ -31,7 +31,7 @@ const Hotels = () => {
 
   const getdata = () => {
     return axios
-      .get(`https://api-knw0.onrender.com/${value}`)
+      .get(`https://api-knw0.onrender.com/hoteldata`)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   };
