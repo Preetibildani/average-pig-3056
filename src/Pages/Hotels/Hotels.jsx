@@ -2,36 +2,35 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import styles from "./Hotels.css";
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+// import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 // import{Box} from "chakra-ui"
 import {
   Box,
-  Button,
+  
   Flex,
   Grid,
   GridItem,
   Heading,
   Image,
-  Popover,
-  PopoverArrow,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverHeader,
-  PopoverTrigger,
+
+  Select,
+
   Text,
 } from "@chakra-ui/react";
+import Map from "./Map";
+import Filter from "./Filter";
+// import Map from "./Map";
 
 // m={2} refers to the value of `theme.space[2]`
 
 const Hotels = () => {
   const [data, setData] = useState([]);
-  const value = "delhi";
+  const value = "Delhi";
 
   const getdata = () => {
     return axios
-      .get(`https://api-knw0.onrender.com/hoteldata`)
+      .get(`https://api-knw0.onrender.com/hoteldata?city=${value}`)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   };
@@ -39,57 +38,101 @@ const Hotels = () => {
   useEffect(() => {
     getdata();
   }, []);
-  const room = 1;
+
+  const handleSort = (e) => {
+    // let data=e.target.value;
+    let selected = e.target.value;
+    if (selected === "high") {
+      data.sort(function (a, b) {
+        if (Number(a.price2) > Number(b.price2)) return 1;
+        if (Number(a.price2) < Number(b.price2)) return -1;
+        return 0;
+      });
+      console.log(data);
+      setData([...data]);
+    }
+    if (selected === "low") {
+      data.sort(function (a, b) {
+        if (Number(a.price2) > Number(b.price2)) return -1;
+        if (Number(a.price2) < Number(b.price2)) return 1;
+        return 0;
+      });
+      console.log(data);
+      setData([...data]);
+    }
+  };
+  // const room = 1;
 
   //
 
-  console.log(data);
+  
 
   return (
     <Box>
       <Box border="1px solid ">Navigation </Box>
       <Grid
-        gridTemplateRows="reapeat(4, 0.1fr)"
-        gridTemplateColumns="reapeat(4, 0.1fr)"
+       
         templateAreas={`
   "a a a a"
   "b f f f"
   "c f f f"
   "d f f f"
   `}
-        gridRowGap="20px"
+
         // gridColumnGap='20px'
-        minHeight={2}
+     
         // grid-template-columns="auto auto auto auto auto "
         // justifyContent="center"
         marginLeft="10em"
-        gap="10px"
+        gap="px"
         // overflow='visible'
       >
+
+        {/* SEARCH COMPONENT HERE */}
         <GridItem border="1px solid red" area="a">
           <Box>Search Component</Box>
         </GridItem>
-        <GridItem w="20em" border="1px solid blue" area="b" h="20%">
-          <Box>MAP</Box>
+        <GridItem w="16.5em"  area="b" h="2.3%" mt='3em'>
+
+          {/* MAP COMPONENT HERE */}
+          <Box boxShadow='xl' w='16em' borderRadius='20px' >
+            <Map />
+          </Box>
         </GridItem>
         <GridItem
           w="20em"
           border="1px solid black"
           area="c"
           h="10%"
-          mt="-115em"
+          mt="-145em"
         >
+
+          {/* ANOTHER SERACH COMPONENT */}
           <Box>Another Search</Box>
         </GridItem>
-        <GridItem border="1px solid green" w="20em" area="d" mt="-245em">
-          Filter{" "}
+
+        {/* FILTER */}
+        <GridItem border="1px solid green" w="20em" area="d" mt="-275em">
+   <Filter />
         </GridItem>
+
+
+        {/* HOTELS DATA HERE */}
         {/* <GridItem w='20em' border='1px solid yellow' area='e'>Search Component</GridItem>  */}
 
         <GridItem gap="20px" className="img-grid" area={"f"} w="58rem">
+          <label style={{position:'absolute',right:"32.3em",fontSize:'12px'}} > Sort By</label>
+        <Select onChange={handleSort} width='20em' h='3em' position='absolute' right='120' placeholder='RECOMMENDED' mb='5em'>
+          
+  <option value='low'>HIGH TO LOW</option>
+  <option value='high'>LOW TO HIGH</option>
+
+  
+          
+</Select>
           {data.map((el, index) => {
             return (
-              <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="20px">
+              <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em">
                 <Flex alignItems="center">
                   {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
                   <Image
@@ -128,7 +171,7 @@ const Hotels = () => {
                       right={128}
                       border="1px solid"
                         mt="2em"
-                        w="11em"
+                        w="12em"
                         
                         textAlign="center"
                         bg="teal"
