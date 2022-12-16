@@ -6,7 +6,7 @@ export const NavBar = () => {
         <>
         <Container marginBottom={"40px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%" border={"2px solid black"}>
         <Box display={"flex"} justifyContent={"space-around"} alignItems={"center"} width={"30%"}>
-            <Image width={"200px"} src={require('../TravelMojo_logo.png')} />
+            <Image width={"200px"} src={require('../Images/Logo.png')} />
             <Menu>
                 <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
                     More Travel

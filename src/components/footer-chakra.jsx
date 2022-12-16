@@ -20,7 +20,7 @@ const BoxStyle = {
             </Box>
         </Card>
 <Container marginTop={"60px"} maxW = '100%'>
-    <Image width={"200px"} marginLeft = {"10%"} src={require('../TravelMojo_logo.png')} />
+    <Image width={"200px"} marginLeft = {"10%"} src={require('../Images/Logo.png')} />
 <SimpleGrid columns={[2, 2, 4]} rows = {[2, 2, 1]} boxSize = {"80%"} margin = {"auto"} spacingY = "50px" marginBottom={"40px"} >
 <Box style = {BoxStyle}> 
     <Text>Company</Text>
