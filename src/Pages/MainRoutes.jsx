@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router'
+import { Route, Routes } from 'react-router-dom'
  import Adminpanel from './AdminPage/Adminpanel'
 import Login from './AdminPage/Login'
 import UserLogin from './Login/Login'
