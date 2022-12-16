@@ -90,7 +90,7 @@ const [searchParams, setSearchParams] = useSearchParams();
         <div>
             <input type="radio" value="desc" name='sortBy'
                 defaultChecked={sortBy === "desc"} />
-            <label>Desc</label>
+            <label>Dec</label>
         </div>
     </Box>
 
