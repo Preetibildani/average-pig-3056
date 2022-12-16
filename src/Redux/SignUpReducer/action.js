@@ -18,7 +18,6 @@ export const Loginfunction = (data) => (dispatch) => {
 
 export const SignUpFunction = (data) => (dispatch) => {
   dispatch({ type: CREATE_REQUEST });
-
   axios
     .post("https://api-knw0.onrender.com/profile", data)
     .then((response) => {

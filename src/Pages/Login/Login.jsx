@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { AiFillApple } from "react-icons/ai"; // FcGoogle
 import { FcGoogle } from "react-icons/fc";
@@ -19,7 +20,6 @@ import {
   FormHelperText,
   Heading,
   Input,
-  Select,
   Spinner,
   Text,
   useMediaQuery,
