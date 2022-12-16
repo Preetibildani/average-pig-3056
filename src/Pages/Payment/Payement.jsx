@@ -20,56 +20,58 @@ import { useSelector, shallowEqual } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-const PaymentPage = () => {
-  const rooms = useSelector((state) => state.AppReducer.rooms);
-  const adults = useSelector((state) => state.AppReducer.adults);
-  const userData = useSelector((state) => state.AuthReducer.userData);
-  const isAuth = useSelector((state) => state.AuthReducer.isAuth);
-  const navigate = useNavigate();
-  const [localHotel, setLocalHotel] = useState({});
-  // const [ordered, setOrdered] = useState(false);
-  const currentHotel = JSON.parse(localStorage.getItem("singleHotel"));
-  const price = Number(currentHotel.price1.split(",").join("")) * rooms;
-  const tax = (price * 18) / 100;
-  const total = tax + price;
-  const { checkInDate, checkOutDate, child } = useSelector((store) => {
-    return {
-      checkInDate: store.AppReducer.checkInDate,
-      checkOutDate: store.AppReducer.checkOutDate,
-      child: store.AppReducer.child,
-    };
-  }, shallowEqual);
+const CheckoutPage = () => {
+  // const rooms = useSelector((state) => state.AppReducer.rooms);
+  // const adults = useSelector((state) => state.AppReducer.adults);
+  // const userData = useSelector((state) => state.AuthReducer.userData);
+  // const isAuth = useSelector((state) => state.AuthReducer.isAuth);
+  // const navigate = useNavigate();
+  // const [localHotel, setLocalHotel] = useState({});
+  // // const [ordered, setOrdered] = useState(false);
+  // const currentHotel = JSON.parse(localStorage.getItem("singleHotel"));
+  // const price = Number(currentHotel.price1.split(",").join("")) * rooms;
+  // const tax = (price * 18) / 100;
+  // const total = tax + price;
 
-  useEffect(() => {
-    setLocalHotel({
-      ...currentHotel,
-      ["checkInDate"]: checkInDate,
-      ["checkOutDate"]: checkOutDate,
-      ["rooms"]: rooms,
-      ["adults"]: adults,
-      ["child"]: child,
-    });
-  }, []);
 
-  const addTrips = () => {
-    if (isAuth) {
-      const id = userData.id;
-      const trip = [localHotel];
-      console.log(localHotel, trip);
-      axios({
-        method: "put",
-        url: `https://api-knw0.onrender.com/profile/${id}`,
-        data: {
-          trip: trip,
-        },
-      });
-    }
-  };
+  // const { checkInDate, checkOutDate, child } = useSelector((store) => {
+  //   return {
+  //     checkInDate: store.AppReducer.checkInDate,
+  //     checkOutDate: store.AppReducer.checkOutDate,
+  //     child: store.AppReducer.child,
+  //   };
+  // }, shallowEqual);
 
-  const confirmBooking = () => {
-    navigate(`/confirmbooking`);
-    addTrips();
-  };
+  // useEffect(() => {
+  //   setLocalHotel({
+  //     ...currentHotel,
+  //     ["checkInDate"]: checkInDate,
+  //     ["checkOutDate"]: checkOutDate,
+  //     ["rooms"]: rooms,
+  //     ["adults"]: adults,
+  //     ["child"]: child,
+  //   });
+  // }, []);
+
+  // const addTrips = () => {
+  //   if (isAuth) {
+  //     const id = userData.id;
+  //     const trip = [localHotel];
+  //     console.log(localHotel, trip);
+  //     axios({
+  //       method: "put",
+  //       url: `https://api-knw0.onrender.com/profile/${id}`,
+  //       data: {
+  //         trip: trip,
+  //       },
+  //     });
+  //   }
+  // };
+
+  // const confirmBooking = () => {
+  //   navigate(`/bookingConfirmed`);
+  //   addTrips();
+  // };
 
   return (
     <div style={{ backgroundColor: "#f8f5f4" }}>
@@ -127,7 +129,7 @@ const PaymentPage = () => {
                     />
                     <Box>
                       <Text textAlign={"left"} marginRight="5px">
-                        Room {rooms}: {adults} Adults 1 King Bed
+                        {/* Room {rooms}: {adults} Adults 1 King Bed */}
                       </Text>
                       <Box display="flex">
                         <Button
@@ -437,7 +439,7 @@ const PaymentPage = () => {
                       <Button
                         m={"10px"}
                         colorScheme={"yellow"}
-                        onClick={confirmBooking}
+                        // onClick={confirmBooking}
                       >
                         Complete Booking
                       </Button>
@@ -472,7 +474,8 @@ const PaymentPage = () => {
                     Guests rated this property 4.8/5 for cleanliness
                   </Text>
                   <Text marginTop={"15px"}>
-                    {rooms} Room: Superior Room City View
+                    {/* {rooms} */}
+                    Room: Superior Room City View
                   </Text>
                   <Text fontSize={"12px"}>Check-in: Thu, 24 Nov</Text>
                   <Text fontSize={"12px"}>Check-out: Fri, 25 Nov</Text>
@@ -483,14 +486,20 @@ const PaymentPage = () => {
                   <Text fontWeight={"bold"}>Price details</Text>
                   <hr />
                   <Flex marginTop="20px">
-                    <Box>{rooms || 1} room x 1 night</Box>
+                    <Box>
+                      {/* {rooms || 1} */}
+                  1  room x 1 night</Box>
                     <Spacer />
-                    <Box>₹{price}</Box>
+                    <Box>
+                      {/* ₹{price} */}
+                      </Box>
                   </Flex>
                   <Flex marginTop="20px">
                     <Box>Taxes and service fees</Box>
                     <Spacer />
-                    <Box>₹{tax}</Box>
+                    <Box>₹
+                      {/* {tax} */}
+                      </Box>
                   </Flex>
                   <hr />
                   <Flex marginTop="20px">
@@ -499,7 +508,9 @@ const PaymentPage = () => {
                     </Box>
                     <Spacer />
                     <Box>
-                      <Text fontWeight={"bold"}>₹{total}</Text>
+                      <Text fontWeight={"bold"}>₹
+                      {/* {total} */}
+                      </Text>
                     </Box>
                   </Flex>
                   <Text marginTop={"30px"}>
@@ -523,4 +534,4 @@ const PaymentPage = () => {
   );
 };
 
-export default PaymentPage;
+export default CheckoutPage;
