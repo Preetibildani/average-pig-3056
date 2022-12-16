@@ -35,7 +35,7 @@ export const getFailure = () => {
 }
 const getdelhidata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://expediapi.onrender.com/hoteldata?city=delhi")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=Delhi")
         .then((res) => {
             console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -46,7 +46,7 @@ const getdelhidata = () => (dispatch) => {
 }
 const getgoadata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://expediapi.onrender.com/hoteldata?city=goa")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=Goa")
         .then((res) => {
             // console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -57,7 +57,7 @@ const getgoadata = () => (dispatch) => {
 }
 const getmumbaidata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://expediapi.onrender.com/hoteldata?city=mumbai")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=Mumbai")
         .then((res) => {
             // console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -68,7 +68,7 @@ const getmumbaidata = () => (dispatch) => {
 }
 const getpunedata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://expediapi.onrender.com/hoteldata?city=pune")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=Pune")
         .then((res) => {
             // console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -80,7 +80,7 @@ const getpunedata = () => (dispatch) => {
 
   const edit=(id,payload)=>(dispatch) => {
     // const navigate = useNavigate();
-      return axios.patch(` https://api-knw0.onrender.com/delhi/${id}`,payload)
+      return axios.patch(` https://expediapi.onrender.com/hoteldata/${id}`,payload)
             .then((res) => {
 
               // console.log(res.data)

@@ -6,7 +6,7 @@ import { getdata } from '../../Redux/AppReducer/action';
 
 export const Filter = () => {
     
-    const delhi = useSelector((store) => {
+    const hoteldata = useSelector((store) => {
         return store.AppReducer.data;
       });
   const dispatch = useDispatch()
@@ -15,11 +15,11 @@ export const Filter = () => {
 
 
   useEffect(() => {
-    if (location || delhi.length === 0) {
-        const category = searchParams.getAll('category');
+    if (location || hoteldata.length === 0) {
+        const city = searchParams.getAll('city');
         const queryParams = {
             params: {
-                category: category,
+                city: city,
                 _sort: searchParams.get("sortBy") && "price",
                 _order: searchParams.get("sortBy")
             }
@@ -29,20 +29,20 @@ export const Filter = () => {
 }, [location.search])
 const [searchParams, setSearchParams] = useSearchParams();
     const [sortBy, setSortBy] = useState(searchParams.get("sortBy") || "")
-    const [category, setCategory] = useState(searchParams.getAll("category") || []);
+    const [city, setcity] = useState(searchParams.getAll("city") || []);
 
     const HandleFilter = (e) => {
         const option = e.target.value
-        let newCategory = [...category];
-        if (newCategory.includes(option)) 
+        let newcity = [...city];
+        if (newcity.includes(option)) 
         {
-            newCategory.splice(newCategory.indexOf(option), 1)
+            newcity.splice(newcity.indexOf(option), 1)
         }
         else 
         {
-            newCategory.push(option)
+            newcity.push(option)
         }
-        setCategory(newCategory)
+        setcity(newcity)
     }
 
     const HandleSortBy = (e) => {
@@ -51,10 +51,10 @@ const [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
         const params = {};
-        category && (params.category = category);
+        city && (params.city = city);
         sortBy && (params.sortBy = sortBy);
         setSearchParams(params);
-    }, [category, setSearchParams, sortBy])
+    }, [city, setSearchParams, sortBy])
   return (
     <div>
 
@@ -62,41 +62,41 @@ const [searchParams, setSearchParams] = useSearchParams();
 
 
     {/* <h2>Filter</h2> */}
-    {/* <div>
-        <input type="checkbox" value='delhi'
+    <div>
+        <input type="checkbox" value='Delhi'
             onChange={HandleFilter}
-            defaultChecked={category.includes('delhi')} />
+            defaultChecked={city.includes('Delhi')} />
         <label >Delhi</label>
     </div>
     <div>
-        <input type="checkbox" value='goa'
-            defaultChecked={category.includes('goa')}
+        <input type="checkbox" value='Goa'
+            defaultChecked={city.includes('Goa')}
             onChange={HandleFilter} />
         <label >Goa</label>
     </div>
     <div>
-        <input type="checkbox" value='mumbai'
-            defaultChecked={category.includes('mumbai')}
+        <input type="checkbox" value='Mumbai'
+            defaultChecked={city.includes('Mumbai')}
             onChange={HandleFilter} />
         <label >Mumbai</label>
     </div>
     <div>
-        <input type="checkbox" value='pune'
-            defaultChecked={category.includes('pune')}
+        <input type="checkbox" value='Pune'
+            defaultChecked={city.includes('Pune')}
             onChange={HandleFilter} />
         <label >pune</label>
-    </div> */}
-    <div>
-            <Select  name="category"   onChange={HandleFilter} 
-            defaultChecked={category.includes('delhi')} >
-              <option value="">Select Category</option>
+    </div>
+    {/* <div>
+            <Select  name="city"   onChange={HandleFilter} 
+            defaultChecked={city.includes('delhi')} >
+              <option value="">Select city</option>
               <option value="pune">Pune</option>
               <option value="delhi">Delhi</option>
               <option value="goa">Goa</option>
               <option value="mumbai">Mumbai </option>
             </Select>
     
-    </div>
+    </div> */}
                   
     
     <Box border={"1px solid red"} display={"flex"} onChange={HandleSortBy}>
