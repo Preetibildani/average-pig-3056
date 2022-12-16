@@ -151,7 +151,7 @@ const Adminpanel = () => {
               {hoteldata.length > 0 &&
                 hoteldata.map((item) => {
                   return (
-                    <Box boxShadow='dark-lg' p='6' rounded='md' bg='white' key={item.id}>
+                    <Box boxShadow='dark-lg' marginBottom={'10px'} p='6' rounded='md' bg='white' key={item.id}>
                       <Box>
                         <Box>
                           <Box display={"flex"} justifyContent="space-around" p="10px">
