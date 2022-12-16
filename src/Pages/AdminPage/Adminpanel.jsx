@@ -9,7 +9,7 @@ import styles from "../AdminPage/AdminPage.module..css";
 import { Filter } from "./Filter";
 const Adminpanel = () => {
   var name = JSON.parse(localStorage.getItem("username"));
-  const delhiData = useSelector((store) => {
+  const hoteldata = useSelector((store) => {
     return store.AppReducer.data;
   });
   const dispatch = useDispatch();
@@ -17,13 +17,12 @@ const Adminpanel = () => {
 
   const [product, setProduct] = useState({
     available: true,
-    category: "delhi",
-    description: "",
+    city: "",
+    heading1: "",
+    headig2: "",
     image: "",
-    price: 0,
-    rating: { rate: 3.9, count: 120 },
-    stores: 9,
-    title: "",
+    price1: 0,
+    price2: 0,
   });
 
   const handleSubmit = (e) => {
@@ -44,7 +43,7 @@ const Adminpanel = () => {
   // console.log(mensData);
   return (
     <Box ml={{ sm: "30px" }} id={styles.admin_header_main_div}>
-      <div id={styles.admin_header}>
+      <div >
         {/* <Link to="/">
           <img
             id={styles.admin_logo}
@@ -61,26 +60,36 @@ const Adminpanel = () => {
       <Filter />
       <Box w="100%" display={{ md: "flex" }} justifyContent="space-around">
         <Box W="50%">
+        <div className={styles.form_element_div}>
+            <Input
+              type="text"
+              value={product.heading1}
+              name={product.heading1}
+              onChange={(e) =>
+                setProduct({ ...product, heading1: e.target.value })
+              }
+              placeholder="title1"
+            />
+          </div>
           <div className={styles.form_element_div}>
             <Input
-              placeholder="title"
               type="text"
-              name={product.title}
-              value={product.title}
-              className={styles.form_Input}
+              value={product.headig2}
+              name={product.headig2}
               onChange={(e) =>
-                setProduct({ ...product, title: e.target.value })
+                setProduct({ ...product, headig2: e.target.value })
               }
+              placeholder="title2"
             />
           </div>
           <div>
             <Select
               name="category"
               onChange={(e) =>
-                setProduct({ ...product, category: e.target.value })
+                setProduct({ ...product, city: e.target.value })
               }
             >
-              <option value="">Select Category</option>
+              <option value="">Select City</option>
               <option value="pune">Pune</option>
               <option value="delhi">Delhi</option>
               <option value="goa">Goa</option>
@@ -91,33 +100,36 @@ const Adminpanel = () => {
             <Input
               type="url"
               placeholder="Image URL"
-              value={product.image}
-              name={product.image}
+              value={product.img2}
+              name={product.img2}
               onChange={(e) =>
-                setProduct({ ...product, image: e.target.value })
+                setProduct({ ...product, img2: e.target.value })
                 }
             />
           </div>
+         
+        
+        
           <div className={styles.form_element_div}>
             <Input
-              type="text"
-              value={product.description}
-              name={product.description}
+              type="number"
+              value={product.price1}
+              name={product.price1}
               onChange={(e) =>
-                setProduct({ ...product, description: e.target.value })
+                setProduct({ ...product, price1: e.target.value })
               }
-              placeholder="description"
+              placeholder="price1"
             />
           </div>
           <div className={styles.form_element_div}>
             <Input
               type="number"
-              value={product.price}
-              name={product.price}
+              value={product.price2}
+              name={product.price2}
               onChange={(e) =>
-                setProduct({ ...product, price: e.target.value })
+                setProduct({ ...product, price2: e.target.value })
               }
-              placeholder="price"
+              placeholder="price2"
             />
           </div>
 
@@ -136,8 +148,8 @@ const Adminpanel = () => {
 
           <Box >
             
-              {delhiData.length > 0 &&
-                delhiData.map((item) => {
+              {hoteldata.length > 0 &&
+                hoteldata.map((item) => {
                   return (
                     <Box boxShadow='dark-lg' p='6' rounded='md' bg='white' key={item.id}>
                       <Box>
@@ -149,8 +161,10 @@ const Adminpanel = () => {
                               {" "}
                               
                               <div>{item.heading1}</div>
-                              {item.city} ({item.rating})
+                              <div>{item.headig2}</div>
+                              <div>{item.city}  </div>
                               <div>₹{item.price1} </div>
+                              <div>₹{item.price2} </div>
                             </Box>{" "}
                           </Box>
                         </Box>

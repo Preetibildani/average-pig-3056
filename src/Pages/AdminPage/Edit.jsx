@@ -18,14 +18,14 @@ const Edit = () => {
   console.log(id,data,products)
   const [product, setProduct] = useState({
     available: true,
-   
+    id:data[0].id,
+    city:data[0].city,
+    img2: data[0].img2,
+    headig2:data[0].headig2,
+    heading1:data[0].heading1,
+    price1:data[0].price1,
+    price2:data[0].price2
     
-    imag1: data[0].image,
-    price:data[0].price,
-    rating: { rate: 3.9, count: 120 },
-    stores: 9,
-    title:data[0].title,
-    id:data[0].id
   });
   const navigate = useNavigate();
   const handleSubmit = (e) => {
@@ -83,10 +83,9 @@ const Edit = () => {
             </Box>
             <Box>
               <Select
-                name="category"
-                //   onChange={(e) => setCategory(e.target.value)}
+                name="city"
+                  //  onChange={(e) => setCity(e.target.value)}
               >
-                <option value="">Data</option>
                 <option value="goa">Goa </option>
                 <option value="pune">Pune </option>
                 <option value="mumbai">Mumbai </option>
@@ -97,22 +96,24 @@ const Edit = () => {
               <Input
                 type="url"
                 placeholder="Image URL"
-                value={product.img1}
-                name={product.img1}
+                value={product.img2}
+                name={product.img2}
                 onChange={(e) =>
-                  setProduct({ ...product, img1: e.target.value })
+                  setProduct({ ...product, img2: e.target.value })
                 }
               />
             </Box>
+           
             <Box>
               <Input
+               
                 type="number"
                 value={product.price1}
                 name={product.price1}
                 onChange={(e) =>
                   setProduct({ ...product, price1: e.target.value })
                 }
-                placeholder="price"
+                placeholder="price1"
               />
             </Box>
             <Box>
@@ -124,17 +125,6 @@ const Edit = () => {
                   setProduct({ ...product, price2: e.target.value })
                 }
                 placeholder="price2"
-              />
-            </Box>
-            <Box>
-              <Input
-                type="text"
-                value={product.text1}
-                name={product.text1}
-                onChange={(e) =>
-                  setProduct({ ...product, text1: e.target.value })
-                }
-                placeholder="description"
               />
             </Box>
             <Box style={{ textAlign: "center" }}>

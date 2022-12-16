@@ -24,7 +24,7 @@ export const getFailure = () => {
 
  const getdata = (queryParams) => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(`https://api-knw0.onrender.com/delhi`)
+    return axios.get("https://expediapi.onrender.com/hoteldata",queryParams)
         .then((res) => {
             // console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -35,7 +35,7 @@ export const getFailure = () => {
 }
 const getdelhidata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://api-knw0.onrender.com/delhi")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=delhi")
         .then((res) => {
             console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -46,7 +46,7 @@ const getdelhidata = () => (dispatch) => {
 }
 const getgoadata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://api-knw0.onrender.com/goa")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=goa")
         .then((res) => {
             // console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -57,7 +57,7 @@ const getgoadata = () => (dispatch) => {
 }
 const getmumbaidata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://api-knw0.onrender.com/mumbai")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=mumbai")
         .then((res) => {
             // console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -68,7 +68,7 @@ const getmumbaidata = () => (dispatch) => {
 }
 const getpunedata = () => (dispatch) => {
     dispatch(getRequest());
-    return axios.get(" https://api-knw0.onrender.com/pune")
+    return axios.get(" https://expediapi.onrender.com/hoteldata?city=pune")
         .then((res) => {
             // console.log(res.data)
             dispatch(getSuccess(res.data))
@@ -96,14 +96,14 @@ const getpunedata = () => (dispatch) => {
     }
     const deleteDataFromCart = (queryParams) => (dispatch) =>  {
       // console.log(id)
-      return axios.delete(` https://api-knw0.onrender.com/delhi/${queryParams}`).then(()=>{
+      return axios.delete(` https://expediapi.onrender.com/hoteldata/${queryParams}`).then(()=>{
         alert("delete data successfully");
       })
     };
     
     const update =  (queryParams) => (dispatch) => {
      
-     return axios.patch(`https://modesens-mocker-api.onrender.com/modesensdata/${queryParams}`).then((r)=>{
+     return axios.patch(`https://expediapi.onrender.com/hoteldata/${queryParams}`).then((r)=>{
         console.log(r.data)
       })
     };
@@ -111,7 +111,7 @@ const getpunedata = () => (dispatch) => {
     const addNewData =  (queryParams) => (dispatch) => {
      
       return axios
-      .post(`https://modesens-mocker-api.onrender.com/modesensdata`,queryParams)
+      .post(`https://expediapi.onrender.com/hoteldata`,queryParams)
       .then((res) => {
         // setProduct(res.data)
        
