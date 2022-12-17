@@ -1,0 +1,17 @@
+.h1 {
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    margin-top: 35px;
+}
+
+.searhChild {
+    height: 20px;
+    padding: 28px;
+    align-items: center;
+}
+
+.sections {
+    margin-top: 15px;
+}
