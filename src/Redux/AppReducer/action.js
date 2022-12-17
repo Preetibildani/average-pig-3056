@@ -26,6 +26,8 @@ export const getFailure = () => {
     dispatch(getRequest());
     return axios.get("https://expediapi.onrender.com/hoteldata",queryParams)
         .then((res) => {
+
+            console.log(res.data)
             // console.log(res.data)
             dispatch(getSuccess(res.data))
         })

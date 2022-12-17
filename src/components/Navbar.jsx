@@ -1,15 +1,21 @@
 import React from "react";
-import { Container, Image, Box, Button, Link, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { Link } from "react-router-dom"
+import { Container,Divider, Text, Image, Box, Button, Menu, MenuButton, MenuItem, MenuList, Popover,
+    PopoverTrigger,
+    PopoverContent,
+    PopoverBody,
+    PopoverArrow,
+    List } from "@chakra-ui/react";
 import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons"
 export const NavBar = () => {
     return (
         <>
-        <Container marginBottom={"40px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%" border={"2px solid black"}>
+        <Container marginBottom={"40px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%">
         <Box display={"flex"} justifyContent={"space-around"} alignItems={"center"} width={"30%"}>
-            <Image width={"200px"} src={require('../TravelMojo_logo.png')} />
+            <Image width={"200px"} src={require('../Images/Logo.png')} />
             <Menu>
-                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-                    More Travel
+                <MenuButton >
+                    More Travel <ChevronDownIcon />
                 </MenuButton>
                 <MenuList>
                     <MenuItem>Stays</MenuItem>
@@ -23,14 +29,37 @@ export const NavBar = () => {
                 </MenuList>
             </Menu>
         </Box>
-        <Box display={"flex"} justifyContent={"space-around"} alignItems={"center"} width={"30%"} textDecoration={"none"}>
+        <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} width={"30%"} textDecoration={"none"}>
             <Link>English</Link>
             <Link>Support</Link>
-            <Link>Trips</Link>
-            <BellIcon href="#" />
-            <Link>Sign In</Link>
+            <Link to="/">Trips</Link>
+            <Link>Notifications</Link>
+            <Popover>
+                <PopoverTrigger>
+                    <Button>Sign In</Button>
+                </PopoverTrigger>
+                <PopoverContent>
+                    <PopoverArrow />
+                    <PopoverBody>
+                        <Box display={"flex"} flexDirection={"column"} alignItems={"center"} width={"300px"}>
+                            <Image src="https://a.travel-assets.com/pricing-claim/sparkle_white.svg" width={"200px"} height={"200px"} />
+                            <Text>Save an average of 15% on thousands of hotels when you're signed in</Text>
+                                <List>
+                                <Divider orientation='horizontal' colorScheme={"gray"} marginBottom={"20px"} marginTop={"20px"} />
+                                <Link to='/adminlogin'>Admin Sign In</Link>
+                                <Divider orientation='horizontal' colorScheme={"gray"} marginBottom={"20px"} marginTop={"20px"} />
+                                <Link to='/login' p>User Sign In</Link>
+                                <Divider orientation='horizontal' colorScheme={"gray"} marginBottom={"20px"} marginTop={"20px"} />
+                                <Link to='/SignUp'>Create Account</Link>
+                                </List>
+                            
+                        </Box>
+                    </PopoverBody>
+                </PopoverContent>
+            </Popover>
         </Box>
         </Container>
+        <Divider orientation='horizontal' colorScheme={"gray"} />
         </>
     );
 }

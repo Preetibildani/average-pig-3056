@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./hbody.module.css"
-export const HPBody = () => {
+const HPBody = () => {
 return(
     <>
     <div className={styles.Card_Img}>
@@ -30,3 +30,4 @@ return(
     </div>
     </>);
 }
+export default HPBody;
