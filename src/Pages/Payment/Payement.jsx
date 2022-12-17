@@ -95,7 +95,7 @@ const CheckoutPage = () => {
                   <Box textAlign="left">
                     <Text fontSize="13px" fontWeight="bold">
                       {" "}
-                      Free cancellation before Tue, 22 Nov, 14:00 (property
+                      Free cancellation before Tue, 28 Dec, 18:00 (property
                       local time)
                     </Text>
                     <Text fontSize="13px">
@@ -116,7 +116,7 @@ const CheckoutPage = () => {
                     src="https://play-lh.googleusercontent.com/VobaoI-5uB6DeCqEnyjHBH_RyMGeJk7SE3pLgJPcPZWq09fa-kb5ovWPysenqUkbwA=w240-h480-rw"
                   />
                   <Link color="blue" marginTop="14px">
-                    Sign in to earn 220 Expedia Rewards points
+                    Sign in to earn 56 Expedia Rewards points
                   </Link>
                 </Box>
 
@@ -432,12 +432,12 @@ const CheckoutPage = () => {
                           <BsFillCloudCheckFill />{" "}
                           <Text marginLeft={"10px"}>
                             Change of plans? No problem. You can cancel{" "}
-                            <Link> for free before Tue, 22 Nov</Link>{" "}
+                            <Link> for free before Tue, 20 Dec</Link>{" "}
                           </Text>{" "}
                         </Button>
                       </Box>
                       <Button
-                        m={"10px"}
+                        m={"15px"}
                         colorScheme={"yellow"}
                         // onClick={confirmBooking}
                       >
@@ -477,8 +477,8 @@ const CheckoutPage = () => {
                     {/* {rooms} */}
                     Room: Superior Room City View
                   </Text>
-                  <Text fontSize={"12px"}>Check-in: Thu, 24 Nov</Text>
-                  <Text fontSize={"12px"}>Check-out: Fri, 25 Nov</Text>
+                  <Text fontSize={"12px"}>Check-in: Thu, 21 Dec</Text>
+                  <Text fontSize={"12px"}>Check-out: Fri, 22 Dec</Text>
                   <Text fontSize={"12px"}>1-night stay</Text>
                 </Box>
 
