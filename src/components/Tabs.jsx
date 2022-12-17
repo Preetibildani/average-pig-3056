@@ -99,7 +99,7 @@ import {
                 onChange={(e) => {
                   onChangeInput(e);
                 }}
-                placeholder="Enter a location e.g.Goa,Bengaluru,Jammu"
+                placeholder="Enter a location e.g.Goa,Delhi,Mumbai,Pune"
               />
             </InputGroup>
             <InputGroup>

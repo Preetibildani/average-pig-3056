@@ -7,21 +7,22 @@ import { Container,Divider, Text, Image, Box, Button, Menu, MenuButton, MenuItem
     PopoverArrow,
     List } from "@chakra-ui/react";
 import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons"
+import { FaBuilding, FaPlane, FaCar, FaShoppingBag, FaGlobe } from "react-icons/fa";
 export const NavBar = () => {
     return (
         <>
         <Container marginBottom={"40px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%">
         <Box display={"flex"} justifyContent={"space-around"} alignItems={"center"} width={"30%"}>
-            <Image width={"200px"} src={require('../Images/Logo.png')} />
+        <Link to='/'><Image width={"200px"} src={require('../Images/Logo.png')} /></Link>
             <Menu>
                 <MenuButton >
                     More Travel <ChevronDownIcon />
                 </MenuButton>
                 <MenuList>
-                    <MenuItem>Stays</MenuItem>
-                    <MenuItem>Flights</MenuItem>
-                    <MenuItem>Car</MenuItem>
-                    <MenuItem>Packages</MenuItem>
+                    <MenuItem width={"fit-content"} display={"flex"} gap={"10px"}><FaBuilding />  Stays</MenuItem>
+                    <MenuItem width={"fit-content"} display={"flex"} gap={"10px"}><FaPlane />Flights</MenuItem>
+                    <MenuItem width={"fit-content"} display={"flex"} gap={"10px"}><FaCar />Car</MenuItem>
+                    <MenuItem width={"fit-content"} display={"flex"} gap={"10px"}><FaShoppingBag />Packages</MenuItem>
                     <MenuItem>Holiday Activities</MenuItem>
                     <MenuItem>Deals</MenuItem>
                     <MenuItem>Group Meetings</MenuItem>
