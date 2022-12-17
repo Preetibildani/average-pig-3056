@@ -450,7 +450,7 @@ const CheckoutPage = () => {
                     Guests rated this property 4.9/5 for cleanliness
                   </Text>
                   <Text marginTop={"15px"}>
-                    {/* {rooms} */}
+                    {/* {rooms} */} Single & Double
                     Room: Superior Room City View
                   </Text>
                   <Text fontSize={"12px"}>Check-in: Thu, 21 Dec</Text>
@@ -464,9 +464,11 @@ const CheckoutPage = () => {
                   <Flex marginTop="20px">
                     <Box>
                       {/* {rooms || 1} */}
-                  1  room x 1 night</Box>
+                  2  room x 1 night</Box>
                     <Spacer />
                     <Box>
+
+                      10,000
                       {/* ₹{price} */}
                       </Box>
                   </Flex>
@@ -474,6 +476,7 @@ const CheckoutPage = () => {
                     <Box>Taxes and service fees</Box>
                     <Spacer />
                     <Box>₹
+                      1800
                       {/* {tax} */}
                       </Box>
                   </Flex>
@@ -486,6 +489,7 @@ const CheckoutPage = () => {
                     <Box>
                       <Text fontWeight={"bold"}>₹
                       {/* {total} */}
+                      11,800
                       </Text>
                     </Box>
                   </Flex>
