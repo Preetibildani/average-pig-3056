@@ -73,6 +73,10 @@ const CheckoutPage = () => {
   //   addTrips();
   // };
 
+  const navigate=useNavigate()
+const confirmed=()=>{
+navigate("/confirmbooking")
+}
   return (
     <div style={{ backgroundColor: "yellow" }}>
       <div
@@ -415,6 +419,7 @@ const CheckoutPage = () => {
                       <Button
                         m={"15px"}
                         colorScheme={"yellow"}
+                        onClick={confirmed}
                         // onClick={confirmBooking}
                       >
                         Complete Booking
