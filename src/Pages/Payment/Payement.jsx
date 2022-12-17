@@ -74,11 +74,11 @@ const CheckoutPage = () => {
   // };
 
   return (
-    <div style={{ backgroundColor: "#f8f5f4" }}>
+    <div style={{ backgroundColor: "yellow" }}>
       <div
-        style={{ width: "100%", height: "auto", backgroundColor: "#f8f5f4" }}
+        style={{ width: "99%", height: "auto", backgroundColor: "#f8f5f4" }}
       >
-        <div style={{ display: "grid", backgroundColor: "#f8f5f4" }}>
+        <div style={{ display: "grid", backgroundColor: "blue" }}>
           <Box bg={"#f8f5f4"} m="auto" w="80%">
             <Heading m="2" textAlign="left">
               Review and book
@@ -471,7 +471,7 @@ const CheckoutPage = () => {
                 <Box margin={"25px"}>
                   <Text>4.8/5 Exceptional (997 reviews)</Text>
                   <Text marginTop={"10px"} fontSize={"13px"}>
-                    Guests rated this property 4.8/5 for cleanliness
+                    Guests rated this property 4.9/5 for cleanliness
                   </Text>
                   <Text marginTop={"15px"}>
                     {/* {rooms} */}
