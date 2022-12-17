@@ -21,6 +21,7 @@ import {
 } from "@chakra-ui/react";
 import Map from "./Map";
 import Filter from "./Filter";
+import SearchBox from "./SearchBox";
 
 // import Map from "./Map";
 
@@ -296,10 +297,10 @@ console.log(data)
         // gridColumnGap='20px'
 
         // grid-template-columns="auto auto auto auto auto "
-        // justifyContent="center"
+        justifyContent="center"
         marginLeft="10em"
-        gap="50px"
-        justifyContent='space-around'
+        
+        // justifyContent=''
         
         // overflow='visible'
       >
@@ -308,16 +309,24 @@ console.log(data)
         <GridItem border="1px solid red" area = 'a' >
           <Box>Search Component</Box>
         </GridItem>
-<GridItem mt={20}>
+<GridItem mt='12'>
 
-        <GridItem w="16.5em" area="b" h="2.3%" mt="">
+        <GridItem w="16.5em" area="b" h="1%" mt=""  >
           {/* MAP COMPONENT HERE */}
-          <Box boxShadow="xl" w="16em" borderRadius="20px">
+          <Box  boxShadow="xl" w="17em" h='10em' borderRadius="10px" >
             <Map />
           </Box>
 {/* >>>>>>> cd50fd9757ab4bc2f548ed28d43b28fd00f45759 */}
+        <hr style={{marginTop:'20px',border:'1px solid gray',boderRadius:'50%'}}/>
         </GridItem>
         
+        {/* ANOTHER SEARCH COMPONENT */}
+        <GridItem border="1px solid green" w="20em" mt ='10em'   >
+          <SearchBox />
+          
+
+
+        </GridItem>
 
         {/* FILTER */}
         <GridItem border="1px solid green" w="20em" mt={250}   >
