@@ -5,14 +5,7 @@ import {
   Checkbox,
   Flex,
   Heading,
-  Input,
-  Radio,
-  RadioGroup,
-  RangeSlider,
-  RangeSliderFilledTrack,
-  RangeSliderThumb,
-  RangeSliderTrack,
-  Stack,
+ 
   Text,
 } from "@chakra-ui/react";
 
@@ -26,7 +19,8 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
   return (
     <Box>
       <Heading>Filter By</Heading>
-      <Text> Poopular Filter</Text>
+      <br />
+      <Text> Popular Filter</Text>
       {title[city][0].popular.map((el) => {
         return (
           <Flex>
@@ -38,6 +32,10 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
         );
       })}
       <Box>
+        <br />
+        <br />
+
+
         <Text> Price per night</Text>
 <p>{value<15000?value:"15000+"}</p>
         <input
@@ -47,7 +45,7 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
           step={3000}
           onInput={handleInput}
           list="number"
-          style={{ width: "350px" }}
+          style={{ width: "300px" }}
         />
         <datalist
           style={{
@@ -56,7 +54,7 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
             justifyContent: "space-between",
             writingMode: "sideways-lr",
             fontSize: "11px",
-            width: "200px",
+            width: "250px",
           }}
           id="tickmarks"
         >
@@ -65,13 +63,15 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
           <option value="9000" label="9000"></option>
           <option value="12000" label="12000"></option>
           <option value="15000" label="15000"></option>
-          <option value="" ></option>
+          <option value="15000+" >15000+</option>
           <option value="" ></option>
           <option value="" ></option>
          
    
         </datalist>
       </Box>
+      <br />
+      <br />
       <Box>
         <Text>Star Rating</Text>
         <Flex gap={2}>
@@ -82,15 +82,22 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
           <Button>5</Button>
         </Flex>
       </Box>
+      <br />
+      <br />
       <Box>
+        <Text fontWeight='bold'>Choose Multiple Location</Text>
+
         {title[city][0].neighbour.map((el,index) => {
           return (
-            <Box>
-              <Flex>
-                <input type='radio' onChange={fil} value={fitcity} />
-                <Text>{el}</Text>
-              </Flex>
+ 
+            <Box  >
+              <label> 
+                <input type='radio'   onChange={fil} value={el} />
+                {el}
+              </label>
+              
             </Box>
+              
           );
         })}
       </Box>
@@ -99,3 +106,4 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
 };
 
 export default Filter;
+

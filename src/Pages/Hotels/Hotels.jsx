@@ -7,16 +7,21 @@ import styles from "./Hotels.css";
 // import{Box} from "chakra-ui"
 import {
   Box,
+
   Flex,
   Grid,
   GridItem,
   Heading,
   Image,
+
+
+
   Select,
   Text,
 } from "@chakra-ui/react";
 import Map from "./Map";
 import Filter from "./Filter";
+
 // import Map from "./Map";
 
 // m={2} refers to the value of `theme.space[2]`
@@ -227,11 +232,14 @@ const [city,setCity] = useState("")
 const filterByCity = (e)=>{
 setCity(e.target.value)
 }
+console.log(city)
 
 
   const getdata = () => {
     return axios
+
       .get(`https://api-knw0.onrender.com/hoteldata?city=${value}`)
+
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   };
@@ -239,6 +247,7 @@ setCity(e.target.value)
   useEffect(() => {
     getdata();
   }, []);
+
 
   const handleSort = (e) => {
     // let data=e.target.value;
@@ -270,9 +279,10 @@ const handleInput = (e)=>{
   setPrice(e.target.value)
 }
 
-
+console.log(data)
 
   //
+
 
   return (
     <Box>
@@ -280,51 +290,54 @@ const handleInput = (e)=>{
       <Grid
         templateAreas={`
   "a a a a"
-  "b f f f"
-  "c f f f"
-  "d f f f"
+  "b c c c"
+  
   `}
         // gridColumnGap='20px'
 
         // grid-template-columns="auto auto auto auto auto "
         // justifyContent="center"
         marginLeft="10em"
-        gap="px"
+        gap="50px"
+        justifyContent='space-around'
+        
         // overflow='visible'
       >
+
         {/* SEARCH COMPONENT HERE */}
-        <GridItem border="1px solid red" area="a">
+        <GridItem border="1px solid red" area = 'a' >
           <Box>Search Component</Box>
         </GridItem>
-        <GridItem w="16.5em" area="b" h="2.3%" mt="3em">
+<GridItem mt={20}>
+
+        <GridItem w="16.5em" area="b" h="2.3%" mt="">
           {/* MAP COMPONENT HERE */}
           <Box boxShadow="xl" w="16em" borderRadius="20px">
             <Map />
           </Box>
+{/* >>>>>>> cd50fd9757ab4bc2f548ed28d43b28fd00f45759 */}
         </GridItem>
-        <GridItem
-          w="20em"
-          border="1px solid black"
-          area="c"
-          h="10%"
-          // mt="-145em"
-        >
-          {/* ANOTHER SERACH COMPONENT */}
-          <Box>Another Search</Box>
-        </GridItem>
+        
 
         {/* FILTER */}
-        <GridItem border="1px solid green" w="20em" area="d" >
+        <GridItem border="1px solid green" w="20em" mt={250}   >
           <Filter title = {filterTitle} city ={value} handleInput = {handleInput} value= {price} fitcity={city} fil = {filterByCity} />
           
 
 
         </GridItem>
+        </GridItem>
+
 
         {/* HOTELS DATA HERE */}
         {/* <GridItem w='20em' border='1px solid yellow' area='e'>Search Component</GridItem>  */}
 
-        <GridItem gap="20px" className="img-grid" area={"f"} w="58rem">
+
+
+
+{/* SORT DATA HERE */}
+        <GridItem gap="20px" className="img-grid"  w="58rem" area='c'>
+
           <label
             style={{ position: "absolute", right: "32.3em", fontSize: "12px" }}
           >
@@ -343,7 +356,8 @@ const handleInput = (e)=>{
             <option value="low">HIGH TO LOW</option>
             <option value="high">LOW TO HIGH</option>
           </Select>
-          {price>0 ?data.filter((item)=>Number(item.price2)<=price || item.heading2).map((el, index) => {
+          {price>0 ?data.filter((item)=>Number(item.price2)<=price || item.heading2===city).map((el, index) => {
+// >>>>>>> cd50fd9757ab4bc2f548ed28d43b28fd00f45759
             return (
               <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em">
                 <Flex alignItems="center">
