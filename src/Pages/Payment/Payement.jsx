@@ -381,16 +381,7 @@ const CheckoutPage = () => {
                           For more details, please contact the property
                          using the information on the booking confirmation.
                         </li>
-                        <li>
-                          To register at this property, guests who are Indian
-                          citizens must provide a valid photo identity card
-                          issued by the Government of India; Permanent Account
-                          Number (PAN) cards will not be accepted due to
-                          national regulations. Travelers who are not citizens
-                          of India must present a valid passport and visa.
-                          Indian citizens must show a PAN card at check-out for
-                          cash transactions exceeding INR 25,000.
-                        </li>
+                       
                         <li>
                           Please note that Expedia and the hotel will not issue
                           a tax invoice. You will receive a commercial receipt
