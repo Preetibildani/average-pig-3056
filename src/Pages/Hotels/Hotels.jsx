@@ -220,6 +220,15 @@ const Hotels = () => {
   ]
 
   };
+
+// For Filter 
+const [city,setCity] = useState("")
+
+const filterByCity = (e)=>{
+setCity(e.target.value)
+}
+
+
   const getdata = () => {
     return axios
       .get(`https://api-knw0.onrender.com/hoteldata?city=${value}`)
@@ -254,6 +263,14 @@ const Hotels = () => {
     }
   };
   // const room = 1;
+
+const[ price,setPrice] = useState(0);
+const handleInput = (e)=>{
+
+  setPrice(e.target.value)
+}
+
+
 
   //
 
@@ -290,15 +307,16 @@ const Hotels = () => {
           border="1px solid black"
           area="c"
           h="10%"
-          mt="-145em"
+          // mt="-145em"
         >
           {/* ANOTHER SERACH COMPONENT */}
           <Box>Another Search</Box>
         </GridItem>
 
         {/* FILTER */}
-        <GridItem border="1px solid green" w="20em" area="d" mt="-275em">
-          <Filter title = {filterTitle} city ={value} />
+        <GridItem border="1px solid green" w="20em" area="d" >
+          <Filter title = {filterTitle} city ={value} handleInput = {handleInput} value= {price} fitcity={city} fil = {filterByCity} />
+          
 
 
         </GridItem>
@@ -325,7 +343,7 @@ const Hotels = () => {
             <option value="low">HIGH TO LOW</option>
             <option value="high">LOW TO HIGH</option>
           </Select>
-          {data.map((el, index) => {
+          {price>0 ?data.filter((item)=>Number(item.price2)<=price || item.heading2).map((el, index) => {
             return (
               <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em">
                 <Flex alignItems="center">
@@ -404,7 +422,87 @@ const Hotels = () => {
                 </Box>
               </Flex>
             );
-          })}
+          }):data.map((el, index) => {
+              return (
+                <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em">
+                  <Flex alignItems="center">
+                    {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
+                    <Image
+                      // zIndex={1}
+                      w="15em"
+                      h="12em"
+                      borderTopLeftRadius="20px"
+                      borderBottomLeftRadius="20px"
+                      // border="1px solid"
+                      src={el.img1}
+                      alt="img"
+                    />
+                    {/* <ChevronRightIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
+                  </Flex>
+                  <Box ml={2} w="60%">
+                    <Heading fontWeight="500" fontSize="20px">
+                      {el.heading1}
+                    </Heading>
+  
+                    <Text>{el.city}</Text>
+                    <Flex gap={3}>
+                      <Box w="70%">
+                        <Text fontSize={14} color="#343b53">
+                          {el.text1}
+                        </Text>
+                        <Text fontSize={14} color="#343b53">
+                          {el.text2}
+                        </Text>
+                        <Text
+                          color="teal"
+                          fontSize={13.5}
+                          fontWeight="semi-bold"
+                          mt="1"
+                        >
+                          {el.text3}
+                        </Text>
+                        <Text color="teal" fontSize={13.5} fontWeight="semi-bold">
+                          {el.text4}
+                        </Text>
+                        <Box>
+                          <Text color="#343b53 " fontWeight="bold" fontSize={13}>
+                            {el.rating} {el.review} {el.no_of_reviews}
+                          </Text>
+                        </Box>
+                      </Box>
+                      {el.heading3 && (
+                        <Box
+                          position="absolute"
+                          right={128}
+                          border="1px solid"
+                          mt="2em"
+                          w="12em"
+                          textAlign="center"
+                          bg="teal"
+                          color="white"
+                          fontWeight="bold"
+                          borderRadius="50px"
+                        >
+                          <Text fontSize="14px">{el.heading3}</Text>
+                        </Box>
+                      )}
+                      <Box mt={"4em"} position="absolute" right={122}>
+                        <Heading fontSize={"20"} mr={2}>
+                          {el.price1}
+                        </Heading>
+                        <Text fontSize="13px" mr="2" textAlign="end">
+                          per night{" "}
+                        </Text>
+                        <Text textAlign="end" mr={2} fontSize="13px">
+                          {el.price2} total{" "}
+                        </Text>
+                      </Box>
+                    </Flex>
+                  </Box>
+                </Flex>
+              );
+            })}
+        
         </GridItem>
       </Grid>
     </Box>
