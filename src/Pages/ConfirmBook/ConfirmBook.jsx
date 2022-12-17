@@ -10,11 +10,11 @@ const ConfirmBook = () => {
   return (
     <div className="lastdiv">
       <div>
-        <img
+        {/* <img
           style={{ height: "200px", margin: "auto" }}
           src="https://www.poornima.edu.in/wp-content/uploads/2020/08/greentick.jpg"
           alt="Lastpage"
-        />
+        /> */}
       </div>
       <h2 style={{ fontSize: "30px", fontWeight: "bold" }}>
         Your Booking Is Complete!
