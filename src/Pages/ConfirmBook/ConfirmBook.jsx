@@ -1,14 +1,39 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
+import logo from "../../Images/Logo.png";
+import {
+  Image,
+
+  Flex,
+
+} from "@chakra-ui/react";
+import { ArrowBackIcon } from "@chakra-ui/icons";
+
 const ConfirmBook = () => {
+
+
   const navigate = useNavigate();
+
+  
+const GotoHome = () => {
+  navigate("/");
+};
   const handleClick = (e) => {
     e.preventDefault();
     navigate("/");
   };
   return (
     <div className="lastdiv">
+<Flex border="1px" color="black" alignItems="center">
+ 
+            <ArrowBackIcon color="blue" boxSize={6} onClick={GotoHome} />
+            {" "}
+            <label htmlFor="">Go To Home</label>
+            <Image marginLeft="41%" boxSize="16%" src={logo} alt="" />
+          </Flex>
+
       <div>
         <img
           style={{ height: "200px", margin: "auto" }}
