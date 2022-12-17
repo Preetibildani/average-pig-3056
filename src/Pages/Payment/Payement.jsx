@@ -78,7 +78,7 @@ const CheckoutPage = () => {
       <div
         style={{ width: "99%", height: "auto", backgroundColor: "#f8f5f4" }}
       >
-        <div style={{ display: "grid", backgroundColor: "blue" }}>
+        <div style={{ display: "grid", backgroundColor: "" }}>
           <Box bg={"#f8f5f4"} m="auto" w="80%">
             <Heading m="2" textAlign="left">
               Review and book
@@ -297,7 +297,7 @@ const CheckoutPage = () => {
                     <Box m={"20px"}>
                       <hr />
                     </Box>
-                    <Text>Create Your Account</Text>
+                    <Text>Create an account</Text>
                     <Box>
                       <Button
                         fontSize={"14px"}
@@ -360,7 +360,7 @@ const CheckoutPage = () => {
                     </Text>
                     <Box marginTop={"20px"} textAlign={"left"}>
                       <Text fontWeight={"bold"}>
-                        Important information about your booking{" "}
+                        Important information {" "}
                       </Text>
                       <Box
                         w={"100%"}
@@ -369,32 +369,17 @@ const CheckoutPage = () => {
                         fontSize={"12px"}
                       >
                         <li>
-                          Cancellations or changes made after 14:00 (property
-                          local time) on 22 Nov 2022 or no-shows are subject to
-                          a property fee equal to 100% of the total amount paid
-                          for the reservation.
+                        Cancellations or changes made after 18:00 (property local time) on 28 
+                        Dec 2022 or no-shows are subject to a property fee equal to 100% of the 
+                        total amount paid for the reservation.
                         </li>
+                      
                         <li>
-                          To make arrangements for check-in please contact the
-                          property ahead of time using the information on the
-                          booking confirmation. If you are planning to arrive
-                          after midnight please contact the property in advance
-                          using the information on the booking confirmation.
-                          Guests must contact the property in advance for
-                          check-in instructions. Front desk staff will greet
-                          guests on arrival. At check-in, guests must provide a
-                          record of full COVID-19 vaccination. Guests providing
-                          vaccine records must have received complete COVID-19
-                          vaccination at least 3 days prior to check-in. For
-                          more details, please contact the property using the
-                          information on the booking confirmation.
-                        </li>
-                        <li>
-                          This property requires guests to confirm their
-                          check-out date at check-in. Any modifications to the
-                          check-out date will incur a fee. Early departure fees
-                          apply if notice not provided; not applicable for
-                          non-refundable rates.
+                        The front desk is open daily from 7:00 AM - 11:00 PM.
+                         This property doesn't offer after-hours check-in. 
+                         Front desk staff will greet guests on arrival.
+                          For more details, please contact the property
+                         using the information on the booking confirmation.
                         </li>
                         <li>
                           To register at this property, guests who are Indian
