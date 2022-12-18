@@ -24,12 +24,15 @@ import Filter from "./Filter";
 import SearchBox from "./SearchBox";
 
 // import Map from "./Map";
+import { NavBar } from './../../components/Navbar';
 
 // m={2} refers to the value of `theme.space[2]`
 
 const Hotels = () => {
   const [data, setData] = useState([]);
   const value = "Delhi";
+  const ano = JSON.parse(localStorage.getItem("staySearch"))
+  console.log(ano.city)
   const filterTitle = {
     Delhi: [
       {
@@ -239,7 +242,7 @@ console.log(city)
   const getdata = () => {
     return axios
 
-      .get(`https://api-knw0.onrender.com/hoteldata?city=${value}`)
+      .get(`https://api-knw0.onrender.com/hoteldata?city=${ano.city}`)
 
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
@@ -287,7 +290,9 @@ console.log(data)
 
   return (
     <Box>
-      <Box border="1px solid ">Navigation </Box>
+      <Box border="1px solid ">
+        <NavBar />
+         </Box>
       <Grid
         templateAreas={`
   "a a a a"

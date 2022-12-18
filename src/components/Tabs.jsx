@@ -79,7 +79,7 @@ import {
         const redirect = (e) => {
           localStorage.setItem("staySearch", JSON.stringify(stayData));
           console.log(`redirecting to /stays/${stayData.city}`);
-          navigate(`/stays/${stayData.city}`);
+          navigate(`/hotels`);
         };
     
       return(
