@@ -45,13 +45,10 @@ const Adminpanel = () => {
   return (
     <Box ml={{ sm: "30px" }} id={styles.admin_header_main_div}>
       <div >
-        {/* <Link to="/">
-          <img
-            id={styles.admin_logo}
-            src="https://i.postimg.cc/gcL4D1yK/Black-and-Red-Cool-and-Funky-Gaming-Logo-removebg-preview-1.png"
-            alt=""
-          />
-        </Link> */}
+        <Link to="/">
+          <Button  _hover={{ bg: "black", color: "white",}} className={"btn_123"} marginTop={"30px"} marginLeft={"85%"} backgroundColor={"purple"}
+           color={"white"}  >Sign Out</Button>
+        </Link>
         <h3   id={"admin_heading"}>
           Welcome{" "}
           <span style={{ color: "#68a68c", fontStyle: "italic" }}>{name}</span> to
