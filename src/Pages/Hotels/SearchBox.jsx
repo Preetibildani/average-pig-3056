@@ -8,7 +8,7 @@ import './Hotels.css'
 
 const SearchBox = () => {
   return (
-    <div>
+    <div classna>
    
 <Text className='title_search'> Search by property name</Text>
        <InputGroup>

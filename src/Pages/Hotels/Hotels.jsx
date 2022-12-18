@@ -21,6 +21,7 @@ import SearchBox from "./SearchBox";
 
 // import Map from "./Map";
 import { NavBar } from './../../components/Navbar';
+import { useNavigate } from "react-router-dom";
 
 // m={2} refers to the value of `theme.space[2]`
 
@@ -28,7 +29,7 @@ const Hotels = () => {
   const [data, setData] = useState([]);
   const value = "Delhi";
   const ano = JSON.parse(localStorage.getItem("staySearch"))
-  console.log(ano.city)
+  // console.log(ano.city)
   const filterTitle = {
     Delhi: [
       {
@@ -236,9 +237,7 @@ console.log(city)
 
 
   const getdata = () => {
-    return axios
-
-      .get(`https://api-knw0.onrender.com/hoteldata?city=${ano.city}`)
+    return axios.get(`https://api-knw0.onrender.com/hoteldata?city=${ano.city}`)
 
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
@@ -281,11 +280,15 @@ const handleInput = (e)=>{
 
 console.log(data)
 
-  //
+  const navigate = useNavigate()//
 
+const handleNavigate = ()=>{
+  console.log("hi")
+ 
+}
 
   return (
-    <Box>
+    <Box  >
       <Box border="1px solid ">
         <NavBar />
          </Box>
@@ -295,6 +298,8 @@ console.log(data)
   "b c c c"
   
   `}
+  
+
         // gridColumnGap='20px'
 
         // grid-template-columns="auto auto auto auto auto "
@@ -322,7 +327,7 @@ console.log(data)
         </GridItem>
         
         {/* ANOTHER SEARCH COMPONENT */}
-        <GridItem  w="16.5em" mt ='10.5em' alignItems={'center'}   >
+        <GridItem  w="16.5em" mt ='10.5em'    >
           <SearchBox />
           
 
@@ -331,7 +336,7 @@ console.log(data)
         </GridItem>
 
         {/* FILTER */}
-        <GridItem border="1px solid green" w="20em" mt='2em'   >
+        <GridItem w="20em" mt='2em'   >
           <Filter title = {filterTitle} city ={value} handleInput = {handleInput} value= {price} fitcity={city} fil = {filterByCity} />
           
 
@@ -370,7 +375,10 @@ console.log(data)
           {price>0 ?data.filter((item)=>Number(item.price2)<=price || item.heading2===city).map((el, index) => {
 // >>>>>>> cd50fd9757ab4bc2f548ed28d43b28fd00f45759
             return (
-              <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em">
+              <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em" onClick={()=>{
+                localStorage.setItem("hoteldata",JSON.stringify(el));
+                navigate("/cart")
+              }} >
                 <Flex alignItems="center">
                   {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
                   <Image
@@ -385,7 +393,7 @@ console.log(data)
                   />
                   {/* <ChevronRightIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
                 </Flex>
-                <Box ml={2} w="60%">
+                <Box ml={2} w="60%" >
                   <Heading fontWeight="500" fontSize="20px">
                     {el.heading1}
                   </Heading>
@@ -449,7 +457,10 @@ console.log(data)
             );
           }):data.map((el, index) => {
               return (
-                <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em">
+                <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em" onClick={()=>{
+                  localStorage.setItem("hoteldata",JSON.stringify(el));
+                  navigate("/payment")
+                }}>
                   <Flex alignItems="center">
                     {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
                     <Image
