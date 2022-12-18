@@ -85,7 +85,7 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
         <Text className="price">Guest Rating</Text>
         <Box display={'grid'}>
 
-        <label htmlFor="">
+        <label >
 
         <input type='radio' />
       Any
@@ -119,13 +119,13 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
       </Box>
       <br />
       <Box>
-        <Text>Star Rating</Text>
-        <Flex gap={2}>
-          <Button>1</Button>
-          <Button>2</Button>
-          <Button>3</Button>
-          <Button>4</Button>
-          <Button>5</Button>
+        <Text className="price">Star Rating</Text>
+        <Flex gap={2} flexWrap='wrap'>
+          <Button className="btn">1 ⭐</Button>
+          <Button className="btn">2 ⭐ </Button>
+          <Button className="btn">3 ⭐</Button>
+          <Button className="btn">4 ⭐</Button>
+          <Button className="btn">5 ⭐</Button>
         </Flex>
       </Box>
       <br />
