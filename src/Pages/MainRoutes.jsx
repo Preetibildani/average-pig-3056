@@ -10,6 +10,7 @@ import Hotels from './Hotels/Hotels';
 import {HotelsCart} from './HotelsCart/HotelsCart'
 import Edit from './AdminPage/Edit'
 import Homepage from './Homepage'
+
 const MainRoutes = () => {
     return (
       <Routes>

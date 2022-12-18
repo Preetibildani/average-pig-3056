@@ -18,6 +18,9 @@ import { MdPool, MdWifi, MdLocalParking, MdFilterVintage, MdSpa, MdRestaurantMen
 import axios from 'axios';
 import { RoomCard } from './RoomCard';
 import { HotelCartLists } from './HotelCartLists';
+import { NavBar } from '../../components/Navbar';
+import Footer1 from '../../components/footer-chakra';
+import { Navigate } from 'react-router-dom';
 
 const roomsArr = [
     {
@@ -246,34 +249,36 @@ const AmenitiesArr = [
 
 
 export  const HotelsCart = () => {
+    const [reserveRoom,setReserveRoom] = useState(false);
     const initialFocusRef = React.useRef();
-    const [id,setId] = useState(4);
+    // const [id,setId] = useState(0);
     const [single,setSingle] = React.useState({});
 
-    const getdata = (id) =>{
-        axios.get(`https://expediapi.onrender.com/hoteldata/${id}`)
-        .then(res=>{
-            setSingle(res.data)
-            // console.log('result:',res.data)
-        })
+    const getdata = () =>{
+        const user = JSON.parse(localStorage.getItem('hoteldata'));
+        setSingle(user);
     }
 
     React.useEffect(()=>{
-        getdata(id);
+        getdata();
     },[])
 
-return <SimpleGrid  style={{
+    if(reserveRoom){
+        return <Navigate to='/payment' />
+    }
+
+return <div>
+    <NavBar/>
+    <SimpleGrid
+      style={{
         width:'80%',
         margin:'auto' ,
+        marginBottom:'30px',
         gridTemplateColumns : '4fr 1fr',
-    }}>
-    <SimpleGrid 
-    //  style={{
-    //     width:'100%',
-    //     height:'300px',
-    //     overflow:'hidden'
-    // }}
+    }}
+    // marginTop='-150px'
     >
+    <SimpleGrid >
     <Card style={{width:'100%'}} >
                     <CardBody >
                         <div
@@ -291,48 +296,7 @@ return <SimpleGrid  style={{
                         />
                         </div>
                     </CardBody>
-                    {/* <div style={{
-                            width:'100%',
-                            height:'300px',
-                            overflow:'hidden'
-                        }}>
-                        <Image 
-                        src={single.img1}
-                        alt='Green double couch with wooden legs'
-                        borderRadius='lg'
-                        width="100%"
-                        />
-                        </div> */}
             </Card>
-        {/* <SimpleGrid  className='sections'>
-            <img
-            style={{
-                width:'100%',
-                height:'50px',
-                overflow:'hidden',
-            }}
-            src={single?.img1}
-            alt='Hotel Pic'
-            /> */}
-            {/* <SimpleGrid  border='1px solid blue' style={{
-                gridTemplateColumns:'1fr 1fr',gap : '1px',
-                height:'300px',
-                overflow:'hidden'
-            }} >
-                <img style={{width:'100%',overflow:'hidden'}} src={single?.img1} alt="" />
-               <SimpleGrid style={{
-                gridTemplateColumns:'1fr 1fr',gap : '1px'
-            }}>
-               <img className='img4' src={single?.img2} alt="" />
-               <img className='img4' src={single?.img3} alt="" />
-               <img className='img4' src={single?.img4} alt="" />
-               <img className='img4' src={single?.img1} alt="" />
-               </SimpleGrid>
-            </SimpleGrid> */}
-            {/* <SimpleGrid  border='1px solid yellow'>
-                
-            </SimpleGrid> */}
-        {/* </SimpleGrid> */}
         <nav  className='navbar , sections' style={{
             borderBottom:'0.3px solid black'
         }} >
@@ -343,7 +307,7 @@ return <SimpleGrid  style={{
                 <li><a href="#Amenities">Amenities</a></li>
                 <li><a href="#Policies">Policies</a></li>
             </ul>
-            <div className='navButton' ><Button colorScheme='blue' marginRight='20px' >Reserve a room</Button></div>
+            <div className='navButton' ><Button onClick={()=>setReserveRoom(true)} colorScheme='blue' marginRight='20px' >Reserve a room</Button></div>
         </nav>
         <section className='sections' id='Overview' style={{lineHeight:'30pt',marginTop:'20px'}}>
             <SimpleGrid
@@ -378,7 +342,6 @@ return <SimpleGrid  style={{
                 </SimpleGrid>
                 <Image
                     objectFit='cover'
-                    // maxW={{ base: '100%', sm: '100%' }}
                     style={{
                         height:'100%',
                         overflow:'hidden'
@@ -530,6 +493,9 @@ Free cots are available on request at the property</Text>
         <Image width='100%' src='https://tpc.googlesyndication.com/simgad/7634118557413064762?' />
         <Image width='100%' src='https://tpc.googlesyndication.com/simgad/7634118557413064762?' />
         <Image width='100%' src='https://tpc.googlesyndication.com/simgad/7634118557413064762?' />
+        <Image width='100%' src='https://tpc.googlesyndication.com/simgad/7634118557413064762?' />
      </SimpleGrid>
     </SimpleGrid>
+    <Footer1/>
+</div>
 }
