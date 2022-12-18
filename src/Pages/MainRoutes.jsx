@@ -7,16 +7,14 @@ import UserLogin from './Login/Login'
 import PaymentPage from './Payment/Payement'
 import CreateAccount from './SignUp/SignUp'
 import Hotels from './Hotels/Hotels';
-import Edit from './AdminPage/Edit'
-
 import {HotelsCart} from './HotelsCart/HotelsCart'
-
-
+import Edit from './AdminPage/Edit'
+import Homepage from './Homepage'
 const MainRoutes = () => {
     return (
       <Routes>
-        <Route path='/hotelsCart' element={<HotelsCart/>} />
-        
+        <Route path='/hotelsCart' element={<HotelsCart/>} 
+        <Route path='/' element={<Homepage />} />
         <Route path='/login' element={<UserLogin />} />
         <Route path='/SignUp' element={<CreateAccount  />} />
         <Route path='/hotels' element={<Hotels/>}/>

@@ -79,7 +79,7 @@ import {
         const redirect = (e) => {
           localStorage.setItem("staySearch", JSON.stringify(stayData));
           console.log(`redirecting to /stays/${stayData.city}`);
-          navigate(`/stays/${stayData.city}`);
+          navigate(`/hotels`);
         };
     
       return(
@@ -99,7 +99,7 @@ import {
                 onChange={(e) => {
                   onChangeInput(e);
                 }}
-                placeholder="Enter a location e.g.Goa,Bengaluru,Jammu"
+                placeholder="Enter a location e.g.Goa,Delhi,Mumbai,Pune"
               />
             </InputGroup>
             <InputGroup>

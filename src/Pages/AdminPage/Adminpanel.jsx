@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import {update,deleteDataFromCart,edit,getdata,addNewData,getgoadata,getpunedata,getmumbaidata,getdelhidata } from "../../Redux/AppReducer/action";
+import {update,deleteDataFromCart,edit,getdata,addNewData, } from "../../Redux/AppReducer/action";
 import styles from "../AdminPage/AdminPage.module..css";
 // import {addNewData}
 import { Filter } from "./Filter";
@@ -21,6 +21,7 @@ const Adminpanel = () => {
     heading1: "",
     headig2: "",
     image: "",
+    rating:"",
     price1: 0,
     price2: 0,
   });
@@ -44,13 +45,10 @@ const Adminpanel = () => {
   return (
     <Box ml={{ sm: "30px" }} id={styles.admin_header_main_div}>
       <div >
-        {/* <Link to="/">
-          <img
-            id={styles.admin_logo}
-            src="https://i.postimg.cc/gcL4D1yK/Black-and-Red-Cool-and-Funky-Gaming-Logo-removebg-preview-1.png"
-            alt=""
-          />
-        </Link> */}
+        <Link to="/">
+          <Button  _hover={{ bg: "black", color: "white",}} className={"btn_123"} marginTop={"30px"} marginLeft={"85%"} backgroundColor={"purple"}
+           color={"white"}  >Sign Out</Button>
+        </Link>
         <h3   id={"admin_heading"}>
           Welcome{" "}
           <span style={{ color: "#68a68c", fontStyle: "italic" }}>{name}</span> to
@@ -162,7 +160,9 @@ const Adminpanel = () => {
                               <div>{item.heading1}</div>
                               <div>{item.headig2}</div>
                               <div>{item.city}  </div>
+                              <div>{item.rating}</div>
                               <div>₹{item.price2} </div>
+                             
                             </Box>{" "}
                           </Box>
                         </Box>

@@ -116,7 +116,6 @@ const getpunedata = () => (dispatch) => {
       .post(`https://expediapi.onrender.com/hoteldata`,queryParams)
       .then((res) => {
         // setProduct(res.data)
-       
         // console.log(res.data);
         alert("Add data successfully");
       })

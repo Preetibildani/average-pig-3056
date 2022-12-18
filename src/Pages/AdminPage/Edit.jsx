@@ -49,9 +49,9 @@ const Edit = () => {
             alt=""
           />
         </Link> */}
-        <h3 id={styles.admin_heading}>
+        <h3 id={'admin_heading'}>
           Welcome{" "}
-          <span style={{ color: "green", fontStyle: "italic" }}>{name}</span> to
+          <span style={{ color: "#68a68c", fontStyle: "italic", marginBottom:"50px" }}>{name}</span> to
           Edit Page
         </h3>
       </Box>
