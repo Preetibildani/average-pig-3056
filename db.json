@@ -1,5 +1,5 @@
 {
-  "delhi": [
+  "hoteldata": [
     {
       "id": 1,
       "city": "Delhi",
@@ -16,6 +16,7 @@
       "rating": "4.3/5",
       "review": "Excellent",
       "no_of_reviews": "(523 reviews)",
+      "available": "true",
       "heading3": "We have 5 left at",
       "price1": "Rs8,650",
       "price2": "10207"
@@ -31,10 +32,11 @@
       "img4": "https://images.trvl-media.com/hotels/4000000/3860000/3851700/3851663/5cc49445.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "The Capital’s Only Modern Palace Hotel",
       "text2": "1 bedroom, 1 bathroom",
-      "text3": "Fully refundable",
+      "text3": "Fully refundale",
       "text4": "Reserve now, pay later",
       "rating": "4.8/5",
       "review": "Exceptional",
+      "available": "true",
       "no_of_reviews": "(997 reviews)",
       "heading3": "",
       "price1": "Rs15,000",
@@ -55,6 +57,7 @@
       "text4": "Reserve now, pay later",
       "rating": "4.2/5",
       "review": "Very good",
+      "available": "true",
       "no_of_reviews": "(356 reviews)",
       "heading3": "We have 5 left at",
       "price1": "Rs7,171",
@@ -77,6 +80,7 @@
       "review": "Very good",
       "no_of_reviews": "(222 reviews)",
       "heading3": "",
+      "available": "true",
       "price1": "Rs8,075",
       "price2": "9528"
     },
@@ -98,7 +102,9 @@
       "no_of_reviews": "(474 reviews)",
       "heading3": "",
       "price1": "Rs11,000",
+      "available": "true",
       "price2": "12980"
+
     },
     {
       "id": 6,
@@ -117,6 +123,7 @@
       "review": "Exceptional",
       "no_of_reviews": "(997 reviews)",
       "heading3": "",
+      "available": "true",
       "price1": "Rs15,000",
       "price2": "17700"
     },
@@ -133,6 +140,7 @@
       "text2": "4 bedroom, 1 bathroom",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "rating": "4.5/5",
       "review": "Wonderful",
       "no_of_reviews": "(999 reviews)",
@@ -151,6 +159,7 @@
       "img4": "https://images.trvl-media.com/hotels/2000000/1310000/1304400/1304393/29aff702.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "18 Min drive from IGI Airport",
       "text2": "5 bedroom, 1 bathroom",
+      "available": "true",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
       "rating": "4.5/5",
@@ -173,6 +182,7 @@
       "text2": "6 bedroom, 1 bathroom",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "rating": "4.3/5",
       "review": "Excellent",
       "no_of_reviews": "(1,000 reviews)",
@@ -192,6 +202,7 @@
       "text1": "Comfiest Beds, Delicious Breakfast",
       "text2": "7 bedroom, 1 bathroom",
       "text3": "Fully refundable",
+      "available": "true",
       "text4": "Reserve now, pay later",
       "rating": "4.1/5",
       "review": "Very good",
@@ -216,6 +227,7 @@
       "rating": "4.2/5",
       "review": "Very good",
       "no_of_reviews": "(169 reviews)",
+      "available": "true",
       "heading3": "We have 5 left at",
       "price1": "Rs7,500",
       "price2": "8400"
@@ -234,6 +246,7 @@
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
       "rating": "4.2/5",
+      "available": "true",
       "review": "Very good",
       "no_of_reviews": "(694 reviews)",
       "heading3": "Member Price available",
@@ -254,6 +267,7 @@
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
       "rating": "3.5/5",
+      "available": "true",
       "review": "Good",
       "no_of_reviews": "(2 reviews)",
       "heading3": "Member Price available",
@@ -274,6 +288,7 @@
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
       "rating": "4.9/5",
+      "available": "true",
       "review": "Exceptional",
       "no_of_reviews": "(154 reviews)",
       "heading3": "Member Price available",
@@ -294,6 +309,7 @@
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
       "rating": "4.2/5",
+      "available": "true",
       "review": "Very good",
       "no_of_reviews": "(391 reviews)",
       "heading3": "Member Price available",
@@ -317,6 +333,7 @@
       "review": "Very good",
       "no_of_reviews": "(366 reviews)",
       "heading3": "35% off",
+      "available": "true",
       "price1": "Rs8,774",
       "price2": "10354"
     },
@@ -337,6 +354,7 @@
       "review": "Very good",
       "no_of_reviews": "(694 reviews)",
       "heading3": "Member Price available",
+      "available": "true",
       "price1": "Rs2,900",
       "price2": "3248"
     },
@@ -356,6 +374,7 @@
       "rating": "4.0/5",
       "review": "Very good",
       "no_of_reviews": "(1,010 reviews)",
+      "available": "true",
       "heading3": "Member Price available",
       "price1": "Rs4,444",
       "price2": "4977"
@@ -376,6 +395,7 @@
       "rating": "4.2/5",
       "review": "Very good",
       "no_of_reviews": "(164 reviews)",
+      "available": "true",
       "heading3": "35% off",
       "price1": "Rs11,049",
       "price2": "13038"
@@ -393,6 +413,7 @@
       "text2": "17 bedroom, 1 bathroom",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "rating": "4.0/5",
       "review": "Very good",
       "no_of_reviews": "(694 reviews)",
@@ -413,6 +434,7 @@
       "text2": "18 bedroom, 1 bathroom",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "rating": "4.7/5",
       "review": "Exceptional",
       "no_of_reviews": "(457 reviews)",
@@ -433,6 +455,7 @@
       "text2": "19 bedroom, 1 bathroom",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "rating": "3.7/5",
       "review": "Good",
       "no_of_reviews": "(997 reviews)",
@@ -453,6 +476,7 @@
       "text2": "20 bedroom, 1 bathroom",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "rating": "4.3/5",
       "review": "Excellent",
       "no_of_reviews": "(474 reviews)",
@@ -473,6 +497,7 @@
       "text2": "21 bedroom, 1 bathroom",
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "rating": "4.0/5",
       "review": "Very good",
       "no_of_reviews": "(1,000 reviews)",
@@ -495,6 +520,7 @@
       "text4": "Reserve now, pay later",
       "rating": "4.4/5",
       "review": "Excellent",
+      "available": "true",
       "no_of_reviews": "(270 reviews)",
       "heading3": "Member Price available",
       "price1": "Rs6,125",
@@ -517,6 +543,7 @@
       "review": "Excellent",
       "no_of_reviews": "(111 reviews)",
       "heading3": "We have 6 left at",
+      "available": "true",
       "price1": "Rs8,500",
       "price2": "10030"
     },
@@ -536,6 +563,7 @@
       "rating": "4.8/5",
       "review": "Exceptional",
       "no_of_reviews": "(208 reviews)",
+      "available": "true",
       "heading3": "Member Price available",
       "price1": "Rs14,000",
       "price2": "16520"
@@ -558,6 +586,7 @@
       "no_of_reviews": "(247 reviews)",
       "heading3": "Member Price available",
       "price1": "Rs21,254",
+      "available": "true",
       "price2": "25080"
     },
     {
@@ -578,6 +607,7 @@
       "no_of_reviews": "(308 reviews)",
       "heading3": "Member Price available",
       "price1": "Rs8,200",
+      "available": "true",
       "price2": "9676"
     },
     {
@@ -594,6 +624,7 @@
       "text3": "Fully refundable",
       "text4": "Reserve now, pay later",
       "rating": "3.7/5",
+      "available": "true",
       "review": "Good",
       "no_of_reviews": "(292 reviews)",
       "heading3": "",
@@ -618,12 +649,13 @@
       "no_of_reviews": "(203 reviews)",
       "heading3": "",
       "price1": "Rs5,000",
+      "available": "true",
       "price2": "5600"
-    }
-  ],
-  "goa": [
+    },
+
+  
     {
-      "id": 1,
+      "id": 32,
       "city": "Goa",
       "heading1": "AC Hotel Genova by Marriott",
       "heading2": "Quarto dei Mille",
@@ -640,10 +672,11 @@
       "price1": "Rs9,901",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
-      "price2": "11378"
+      "price2": "11378",
+      "available": "true"
     },
     {
-      "id": 2,
+      "id": 33,
       "city": "Goa",
       "heading1": "Tower Genova Airport Hotel ",
       "heading2": "Sestri Ponente",
@@ -658,12 +691,13 @@
       "no_of_reviews": "(626 reviews)",
       "heading3": "",
       "price1": "Rs7,383",
+      "available": "true",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
       "price2": "8609"
     },
     {
-      "id": 3,
+      "id": 34,
       "city": "Goa",
       "heading1": "Best Western Premier CHC Airport",
       "heading2": "Sestri Ponente",
@@ -680,10 +714,11 @@
       "price1": "Rs9,081",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
-      "price2": "10476"
+      "price2": "10476",
+      "available": "true"
     },
     {
-      "id": 4,
+      "id": 35,
       "city": "Goa",
       "heading1": "MarinaPlace Resort & Spa",
       "heading2": "Sestri Ponente",
@@ -700,30 +735,13 @@
       "price1": "Rs12,558",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
-      "price2": "14302"
+      "price2": "14302",
+      "available": "true"
+
     },
+    
     {
-      "id": 5,
-      "city": "Goa",
-      "heading1": "Grand Hotel Mediterranée",
-      "heading2": "Pegli",
-      "img1": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/b0fe6b88.jpg?impolicy=resizecrop&rw=455&ra=fit",
-      "img2": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/431d2d54.jpg?impolicy=resizecrop&rw=455&ra=fit",
-      "img3": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/2f4dca80.jpg?impolicy=resizecrop&rw=455&ra=fit",
-      "img4": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/a462fdfc.jpg?impolicy=resizecrop&rw=455&ra=fit",
-      "text1": "Reserve A Luxe Urban Escape",
-      "text2": "2 bedroom, 1 bathroom",
-      "rating": "3.8/5",
-      "review": "Good",
-      "no_of_reviews": "(557 reviews)",
-      "heading3": "We have 2 left at 10% off at",
-      "price1": "Rs7,475",
-      "text4": "Reserve now, pay later",
-      "text3": "Fully refundable",
-      "price2": "8466"
-    },
-    {
-      "id": 6,
+      "id": 36,
       "city": "Goa",
       "heading1": "Novotel Genova City",
       "heading2": "Genoa",
@@ -740,10 +758,11 @@
       "price1": "Rs9,376",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
+      "available": "true",
       "price2": "10801"
     },
     {
-      "id": 7,
+      "id": 37,
       "city": "Goa",
       "heading1": "Holiday Inn Genoa City, an IHG Hotel",
       "heading2": "San Teodoro",
@@ -758,12 +777,13 @@
       "no_of_reviews": "(670 reviews)",
       "heading3": "",
       "price1": "Rs9,749",
+      "available": "true",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
       "price2": "11211"
     },
     {
-      "id": 8,
+      "id": 38,
       "city": "Goa",
       "heading1": "Grand Hotel Savoia",
       "heading2": "Prè",
@@ -783,7 +803,7 @@
       "price2": "17199"
     },
     {
-      "id": 9,
+      "id": 39,
       "city": "Goa",
       "heading1": "Hotel Continental Genova",
       "heading2": "Prè",
@@ -795,6 +815,7 @@
       "text2": "6 bedroom, 1 bathroom",
       "rating": "4.4/5",
       "review": "Excellent",
+      "available": "true",
       "no_of_reviews": "(983 reviews)",
       "heading3": "",
       "price1": "Rs10,087",
@@ -803,10 +824,11 @@
       "price2": "11583"
     },
     {
-      "id": 10,
+      "id": 40,
       "city": "Goa",
       "heading1": "B&B Hotel Genova",
       "heading2": "Prè",
+      "available": "true",
       "img1": "https://images.trvl-media.com/hotels/1000000/40000/34200/34156/4de77d58.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "img2": "https://images.trvl-media.com/hotels/1000000/40000/34200/34156/c14ad53d.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "img3": "https://images.trvl-media.com/hotels/1000000/40000/34200/34156/1318604c.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -823,7 +845,7 @@
       "price2": "11235"
     },
     {
-      "id": 11,
+      "id": 41,
       "city": "Goa",
       "heading1": "Bristol Palace Hotel",
       "heading2": "San Vincenzo",
@@ -833,6 +855,7 @@
       "img4": "https://images.trvl-media.com/hotels/1000000/10000/2600/2575/876a4704.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Stay For Breakfast",
       "text2": "8 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "4.5/5",
       "review": "Wonderful",
       "no_of_reviews": "(986 reviews)",
@@ -843,7 +866,7 @@
       "price2": "15837"
     },
     {
-      "id": 12,
+      "id": 42,
       "city": "Goa",
       "heading1": "NH Collection Genova Marina",
       "heading2": "Genoa",
@@ -856,6 +879,7 @@
       "rating": "4.4/5",
       "review": "Excellent",
       "no_of_reviews": "(987 reviews)",
+      "available": "true",
       "heading3": "We have 4 left at",
       "price1": "Rs12,625",
       "text4": "Reserve now, pay later",
@@ -863,7 +887,7 @@
       "price2": "14375"
     },
     {
-      "id": 13,
+      "id": 43,
       "city": "Goa",
       "heading1": "Hotel Palazzo Grillo",
       "heading2": "Genoa Historical Centre",
@@ -873,6 +897,7 @@
       "img4": "https://images.trvl-media.com/hotels/18000000/17410000/17408400/17408307/7bb2df54.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Great Small Breaks. Book now.",
       "text2": "10 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "4.7/5",
       "review": "Exceptional",
       "no_of_reviews": "(191 reviews)",
@@ -883,7 +908,7 @@
       "price2": "14374"
     },
     {
-      "id": 14,
+      "id": 44,
       "city": "Goa",
       "heading1": "HNN Luxury Suites",
       "heading2": "Prè",
@@ -893,6 +918,7 @@
       "img4": "https://images.trvl-media.com/hotels/25000000/24890000/24888900/24888859/d6f64d83.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Limited time offer - Grand Getaways",
       "text2": "11 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "4.6/5",
       "review": "Wonderful",
       "no_of_reviews": "(159 reviews)",
@@ -903,7 +929,7 @@
       "price2": "9161"
     },
     {
-      "id": 15,
+      "id": 45,
       "city": "Goa",
       "heading1": "Hotel Nuovo Nord",
       "heading2": "Prè",
@@ -916,6 +942,7 @@
       "rating": "4.3/5",
       "review": "Excellent",
       "no_of_reviews": "(361 reviews)",
+      "available": "true",
       "heading3": "",
       "price1": "Rs6,571",
       "text4": "Reserve now, pay later",
@@ -923,7 +950,7 @@
       "price2": "7472"
     },
     {
-      "id": 16,
+      "id": 46,
       "city": "Goa",
       "heading1": "Hotel Britannia",
       "heading2": "Prè",
@@ -933,6 +960,7 @@
       "img4": "https://images.trvl-media.com/hotels/2000000/1050000/1041900/1041839/26ebdf02.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Stay For Breakfast",
       "text2": "13 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "3.7/5",
       "review": "Good",
       "no_of_reviews": "(988 reviews)",
@@ -943,7 +971,7 @@
       "price2": "6815"
     },
     {
-      "id": 17,
+      "id": 47,
       "city": "Goa",
       "heading1": "Hotel De Ville",
       "heading2": "Genoa Historical Centre",
@@ -953,6 +981,7 @@
       "img4": "https://images.trvl-media.com/hotels/31000000/30370000/30361800/30361767/a568dd92.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Indulgent Escapes",
       "text2": "14 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "4.6/5",
       "review": "Wonderful",
       "no_of_reviews": "(89 reviews)",
@@ -963,7 +992,7 @@
       "price2": "14050"
     },
     {
-      "id": 18,
+      "id": 48,
       "city": "Goa",
       "heading1": "New Alexander",
       "heading2": "Prè",
@@ -974,6 +1003,7 @@
       "text1": "Great Small Breaks. Book now.",
       "text2": "15 bedroom, 1 bathroom",
       "rating": "3.5/5",
+      "available": "true",
       "review": "Good",
       "no_of_reviews": "(121 reviews)",
       "heading3": "We have 3 left at 5% off at",
@@ -983,10 +1013,11 @@
       "price2": "7882"
     },
     {
-      "id": 19,
+      "id": 49,
       "city": "Goa",
       "heading1": "Ostello Bello Genova",
       "heading2": "Prè",
+      "available": "true",
       "img1": "https://images.trvl-media.com/hotels/70000000/69280000/69278500/69278455/acb310ef.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "img2": "https://images.trvl-media.com/hotels/70000000/69280000/69278500/69278455/9f4f8c40.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "img3": "https://images.trvl-media.com/hotels/70000000/69280000/69278500/69278455/e5860ae1.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1003,7 +1034,7 @@
       "price2": "7545"
     },
     {
-      "id": 20,
+      "id": 50,
       "city": "Goa",
       "heading1": "Hotel Galles",
       "heading2": "Prè",
@@ -1013,6 +1044,7 @@
       "img4": "https://images.trvl-media.com/hotels/2000000/1400000/1396100/1396089/f25e0f2c.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Reserve A Luxe Urban Escape",
       "text2": "17 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "3.7/5",
       "review": "Good",
       "no_of_reviews": "(112 reviews)",
@@ -1023,7 +1055,7 @@
       "price2": "15112"
     },
     {
-      "id": 21,
+      "id": 51,
       "city": "Goa",
       "heading1": "Hotel Vittoria & Orlandini",
       "heading2": "Prè",
@@ -1033,6 +1065,7 @@
       "img4": "https://images.trvl-media.com/hotels/1000000/920000/915500/915409/610021e6.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Stay For Breakfast",
       "text2": "18 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "4.1/5",
       "review": "Very good",
       "no_of_reviews": "(213 reviews)",
@@ -1043,7 +1076,7 @@
       "price2": "6454"
     },
     {
-      "id": 22,
+      "id": 52,
       "city": "Goa",
       "heading1": "Hotel Europa",
       "heading2": "Prè",
@@ -1053,6 +1086,7 @@
       "img4": "https://images.trvl-media.com/hotels/1000000/20000/19400/19357/07492ed1.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Indulgent Escapes",
       "text2": "19 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "3.6/5",
       "review": "Good",
       "no_of_reviews": "(268 reviews)",
@@ -1063,7 +1097,7 @@
       "price2": "6454"
     },
     {
-      "id": 23,
+      "id": 53,
       "city": "Goa",
       "heading1": "Albergo Parigi",
       "heading2": "Prè",
@@ -1073,6 +1107,7 @@
       "img4": "https://images.trvl-media.com/hotels/23000000/22480000/22475600/22475599/c94718e4.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Great Small Breaks. Book now.",
       "text2": "20 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "3.7/5",
       "review": "Good",
       "no_of_reviews": "(194 reviews)",
@@ -1083,7 +1118,7 @@
       "price2": "5494"
     },
     {
-      "id": 24,
+      "id": 54,
       "city": "Goa",
       "heading1": "Le Nuvole Residenza d'epoca",
       "heading2": "Genoa Historical Centre",
@@ -1093,6 +1128,7 @@
       "img4": "https://images.trvl-media.com/hotels/15000000/14870000/14860600/14860548/4e8e7a6f.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "text1": "Limited time offer - Grand Getaways",
       "text2": "21 bedroom, 1 bathroom",
+      "available": "true",
       "rating": "4.7/5",
       "review": "Exceptional",
       "no_of_reviews": "(157 reviews)",
@@ -1103,10 +1139,11 @@
       "price2": "12020"
     },
     {
-      "id": 25,
+      "id": 55,
       "city": "Goa",
       "heading1": "Best Western Hotel Porto Antico",
       "heading2": "Prè",
+      "available": "true",
       "img1": "https://images.trvl-media.com/hotels/3000000/2390000/2385600/2385558/474a22fa.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "img2": "https://images.trvl-media.com/hotels/3000000/2390000/2385600/2385558/66cc4208.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "img3": "https://images.trvl-media.com/hotels/3000000/2390000/2385600/2385558/e3bafed8.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1123,7 +1160,7 @@
       "price2": "14050"
     },
     {
-      "id": 26,
+      "id": 56,
       "city": "Goa",
       "heading1": "Albergo della Posta",
       "heading2": "Prè",
@@ -1140,10 +1177,11 @@
       "price1": "Rs6,313",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
+      "available": "true",
       "price2": "7187"
     },
     {
-      "id": 27,
+      "id": 57,
       "city": "Goa",
       "heading1": "Hotel Twenty Nine",
       "heading2": "Prè",
@@ -1159,11 +1197,12 @@
       "heading3": "We have 1 left at 10% off at",
       "price1": "Rs4,585",
       "text4": "Reserve now, pay later",
+      "available": "true",
       "text3": "Fully refundable",
       "price2": "5287"
     },
     {
-      "id": 28,
+      "id": 58,
       "city": "Goa",
       "heading1": "So & Leo Guest House",
       "heading2": "Genoa Historical Centre",
@@ -1176,6 +1215,7 @@
       "rating": "4.8/5",
       "review": "Exceptional",
       "no_of_reviews": "(16 reviews)",
+      "available": "true",
       "heading3": "We have 1 left at",
       "price1": "Rs7,752",
       "text4": "Reserve now, pay later",
@@ -1183,7 +1223,7 @@
       "price2": "8771"
     },
     {
-      "id": 29,
+      "id": 59,
       "city": "Goa",
       "heading1": "Starhotels President",
       "heading2": "Foce",
@@ -1196,6 +1236,7 @@
       "rating": "4.1/5",
       "review": "Very good",
       "no_of_reviews": "(929 reviews)",
+      "available": "true",
       "heading3": "10% off",
       "price1": "Rs9,302",
       "text4": "Reserve now, pay later",
@@ -1203,7 +1244,7 @@
       "price2": "10719"
     },
     {
-      "id": 30,
+      "id": 60,
       "city": "Goa",
       "heading1": "Aneide's Bed & Breakfast",
       "heading2": "Prè",
@@ -1218,12 +1259,13 @@
       "no_of_reviews": "(7 reviews)",
       "heading3": "",
       "price1": "Rs5,962",
+      "available": "true",
       "text4": "Reserve now, pay later",
       "text3": "Fully refundable",
       "price2": "6802"
     },
     {
-      "id": 31,
+      "id": 61,
       "city": "Goa",
       "heading1": "Best Western Plus City Hotel",
       "heading2": "San Vincenzo",
@@ -1236,6 +1278,7 @@
       "rating": "4.4/5",
       "review": "Excellent",
       "no_of_reviews": "(499 reviews)",
+      "available": "true",
       "heading3": "",
       "price1": "Rs13,811",
       "text4": "Reserve now, pay later",
@@ -1243,7 +1286,7 @@
       "price2": "15679"
     },
     {
-      "id": 32,
+      "id": 62,
       "city": "Goa",
       "heading1": "Acquario Genova Suite",
       "heading2": "Genoa",
@@ -1258,10 +1301,11 @@
       "no_of_reviews": "(14 reviews)",
       "heading3": "",
       "price1": "Rs13,449",
+      "available": "true",
       "price2": "15037"
     },
     {
-      "id": 33,
+      "id": 63,
       "city": "Goa",
       "heading1": "Hotel Bellevue",
       "heading2": "Prè",
@@ -1275,11 +1319,12 @@
       "review": "Good",
       "no_of_reviews": "(462 reviews)",
       "heading3": "We have 2 left at",
+      "available": "true",
       "price1": "Rs5,717",
       "price2": "6533"
     },
     {
-      "id": 34,
+      "id": 64,
       "city": "Goa",
       "heading1": "Melia Genova",
       "heading2": "Carignano",
@@ -1293,11 +1338,12 @@
       "review": "Wonderful",
       "no_of_reviews": "(681 reviews)",
       "heading3": "We have 7 left at",
+      "available": "true",
       "price1": "Rs13,584",
       "price2": "15674"
     },
     {
-      "id": 35,
+      "id": 65,
       "city": "Goa",
       "heading1": "Palazzo Cicala",
       "heading2": "Genoa Historical Centre",
@@ -1309,13 +1355,14 @@
       "text2": "3 bedroom, 1 bathroom",
       "rating": "3.5/5",
       "review": "Good",
+      "available": "true",
       "no_of_reviews": "(139 reviews)",
       "heading3": "We have 1 left at 5% off at",
       "price1": "Rs9,048",
       "price2": "10440"
     },
     {
-      "id": 36,
+      "id": 66,
       "city": "Goa",
       "heading1": "Hotel Helvetia",
       "heading2": "Prè",
@@ -1328,12 +1375,13 @@
       "rating": "3.8/5",
       "review": "Good",
       "no_of_reviews": "(200 reviews)",
+      "available": "true",
       "heading3": "We have 4 left at 10% off at",
       "price1": "Rs7,642",
       "price2": "8650"
     },
     {
-      "id": 37,
+      "id": 67,
       "city": "Goa",
       "heading1": "Hotel Astoria",
       "heading2": "San Vincenzo",
@@ -1344,6 +1392,7 @@
       "text1": "Indulgent Escapes",
       "text2": "5 bedroom, 1 bathroom",
       "rating": "5.0/5",
+      "available": "true",
       "review": "Exceptional",
       "no_of_reviews": "(2 reviews)",
       "heading3": "",
@@ -1351,7 +1400,7 @@
       "price2": "13887"
     },
     {
-      "id": 38,
+      "id": 68,
       "city": "Goa",
       "heading1": "B&B Hotel Genova City Center",
       "heading2": "San Vincenzo",
@@ -1366,10 +1415,11 @@
       "no_of_reviews": "(1 review)",
       "heading3": "",
       "price1": "Rs7,014",
+      "available": "true",
       "price2": "7959"
     },
     {
-      "id": 39,
+      "id": 69,
       "city": "Goa",
       "heading1": "NH Genova Centro",
       "heading2": "Maddalena",
@@ -1384,10 +1434,11 @@
       "no_of_reviews": "(713 reviews)",
       "heading3": "",
       "price1": "Rs10,041",
+      "available": "true",
       "price2": "11532"
     },
     {
-      "id": 40,
+      "id": 70,
       "city": "Goa",
       "heading1": "Bluripa Guest House",
       "heading2": "Genoa Historical Centre",
@@ -1402,10 +1453,11 @@
       "no_of_reviews": "(17 reviews)",
       "heading3": "We have 1 left at",
       "price1": "Rs9,303",
+      "available": "true",
       "price2": "10477"
     },
     {
-      "id": 41,
+      "id": 71,
       "city": "Goa",
       "heading1": "Best Western Hotel Moderno Verdi",
       "heading2": "San Vincenzo",
@@ -1418,12 +1470,13 @@
       "rating": "4.1/5",
       "review": "Very good",
       "no_of_reviews": "(605 reviews)",
+      "available": "true",
       "heading3": "We have 1 left at",
       "price1": "Rs6,978",
       "price2": "8163"
     },
     {
-      "id": 42,
+      "id": 72,
       "city": "Goa",
       "heading1": "Charming Genova Residenza D'Epoca",
       "heading2": "Genoa Historical Centre",
@@ -1436,12 +1489,13 @@
       "rating": "4.4/5",
       "review": "Excellent",
       "no_of_reviews": "(19 reviews)",
+      "available": "true",
       "heading3": "We have 1 left at 75% off at",
       "price1": "Rs13,160",
       "price2": "14720"
     },
     {
-      "id": 43,
+      "id": 73,
       "city": "Goa",
       "heading1": "Hotel Nologo",
       "heading2": "San Vincenzo",
@@ -1454,12 +1508,13 @@
       "rating": "4.2/5",
       "review": "Very good",
       "no_of_reviews": "(638 reviews)",
+      "available": "true",
       "heading3": "We have 1 left at",
       "price1": "Rs5,315",
       "price2": "6902"
     },
     {
-      "id": 44,
+      "id": 74,
       "city": "Goa",
       "heading1": "Hotel Bel Soggiorno",
       "heading2": "San Vincenzo",
@@ -1472,12 +1527,13 @@
       "rating": "4.1/5",
       "review": "Very good",
       "no_of_reviews": "(141 reviews)",
+      "available": "true",
       "heading3": "We have 5 left at",
       "price1": "Rs7,679",
       "price2": "8690"
     },
     {
-      "id": 45,
+      "id": 75,
       "city": "Goa",
       "heading1": "Hotel Doria",
       "heading2": "Genoa Historical Centre",
@@ -1490,12 +1546,13 @@
       "rating": "4.2/5",
       "review": "Very good",
       "no_of_reviews": "(19 reviews)",
+      "available": "true",
       "heading3": "We have 1 left at",
       "price1": "Rs9,229",
       "price2": "10396"
     },
     {
-      "id": 46,
+      "id": 76,
       "city": "Goa",
       "heading1": "Hotel Cairoli",
       "heading2": "Genoa Historical Centre",
@@ -1507,13 +1564,14 @@
       "text2": "2 bedroom, 1 bathroom",
       "rating": "4.2/5",
       "review": "Very good",
+      "available": "true",
       "no_of_reviews": "(157 reviews)",
       "heading3": "We have 1 left at 5% off at",
       "price1": "Rs8,322",
       "price2": "9397"
     },
     {
-      "id": 47,
+      "id": 77,
       "city": "Goa",
       "heading1": "Mercure Genova San Biagio",
       "heading2": "Genoa",
@@ -1526,12 +1584,13 @@
       "rating": "4.2/5",
       "review": "Very good",
       "no_of_reviews": "(867 reviews)",
+      "available": "true",
       "heading3": "",
       "price1": "Rs9,524",
       "price2": "10964"
     },
     {
-      "id": 48,
+      "id": 78,
       "city": "Goa",
       "heading1": "Ostellin Genova Hostel",
       "heading2": "Genoa Historical Centre",
@@ -1544,12 +1603,13 @@
       "rating": "4.3/5",
       "review": "Excellent",
       "no_of_reviews": "(42 reviews)",
+      "available": "true",
       "heading3": "We have 2 left at",
       "price1": "Rs5,907",
       "price2": "6741"
     },
     {
-      "id": 49,
+      "id": 79,
       "city": "Goa",
       "heading1": "Olympia Hotel",
       "heading2": "San Vincenzo",
@@ -1562,12 +1622,13 @@
       "rating": "4.0/5",
       "review": "Very good",
       "no_of_reviews": "(168 reviews)",
+      "available": "true",
       "heading3": "We have 1 left at",
       "price1": "Rs5,977",
       "price2": "6819"
     },
     {
-      "id": 50,
+      "id": 80,
       "city": "Goa",
       "heading1": "Hotel Major Genova",
       "heading2": "Genoa Historical Centre",
@@ -1580,15 +1641,17 @@
       "rating": "4.0/5",
       "review": "Very good",
       "no_of_reviews": "(171 reviews)",
+      "available": "true",
       "heading3": "",
       "price1": "Rs5,168",
       "price2": "5929"
-    }
-  ],
-  "mumbai": [
+    },
+ 
+  
     {
-      "id": 1,
+      "id": 81,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "The St. Regis Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1607,8 +1670,9 @@
       "price2": "15930"
     },
     {
-      "id": 2,
+      "id": 82,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "Lakeside Chalet - Mumbai, Marriott Executive Apartments",
       "heading2": "Powai",
       "img1": "https://images.trvl-media.com/hotels/1000000/790000/788800/788780/a37ee8e7.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1627,8 +1691,9 @@
       "price2": "12390"
     },
     {
-      "id": 3,
+      "id": 83,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "The Westin Mumbai Garden City",
       "heading2": "Goregaon",
       "img1": "https://images.trvl-media.com/hotels/4000000/3030000/3021000/3020992/30009e10.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1647,8 +1712,9 @@
       "price2": "15340"
     },
     {
-      "id": 4,
+      "id": 84,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "ITC Maratha Mumbai, a Luxury Collection Hotel, Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/1000000/580000/577900/577808/ce6b7c15.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1667,8 +1733,9 @@
       "price2": "13570"
     },
     {
-      "id": 5,
+      "id": 85,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "JW Marriott Mumbai Juhu",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/1000000/870000/860900/860842/cff670cd.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1687,8 +1754,9 @@
       "price2": "15187"
     },
     {
-      "id": 6,
+      "id": 86,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "Taj Mahal Tower, Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/a80151c4.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1707,8 +1775,9 @@
       "price2": "15930"
     },
     {
-      "id": 7,
+      "id": 87,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "The Taj Mahal Palace Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/f93bcf11.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1727,8 +1796,9 @@
       "price2": "25370"
     },
     {
-      "id": 8,
+      "id": 88,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "Niranta Airport Transit Hotel & Lounge Terminal 2 Arrivals",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/12000000/11860000/11859400/11859338/80ff3bfc.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1747,8 +1817,9 @@
       "price2": "10632"
     },
     {
-      "id": 9,
+      "id": 89,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "Four Seasons Hotel Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/2000000/1620000/1619200/1619199/f2a838d9.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1767,8 +1838,9 @@
       "price2": "14750"
     },
     {
-      "id": 10,
+      "id": 90,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "The Leela Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/1000000/20000/17800/17773/52ed80d4.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1787,8 +1859,9 @@
       "price2": "15340"
     },
     {
-      "id": 11,
+      "id": 91,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "Sofitel Mumbai BKC Hotel",
       "heading2": "Bandra Kurla Complex",
       "img1": "https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/0c5cee25.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1807,8 +1880,9 @@
       "price2": "12538"
     },
     {
-      "id": 12,
+      "id": 92,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "Hotel Terminus Square",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/79000000/78400000/78390400/78390370/b5781e9b.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1824,11 +1898,12 @@
       "no_of_reviews": "(825 reviews)",
       "heading3": "We have 5 left at",
       "price1": "Rs2,700",
-      "price2": "3024"
+      "price2": "30200"
     },
     {
-      "id": 13,
+      "id": 93,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "President, Mumbai - IHCL SeleQtions",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/1000000/30000/20200/20189/22218940.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1847,8 +1922,9 @@
       "price2": "11210"
     },
     {
-      "id": 14,
+      "id": 94,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "The St. Regis Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1867,8 +1943,9 @@
       "price2": "15930"
     },
     {
-      "id": 15,
+      "id": 95,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "The Oberoi Mumbai",
       "heading2": "Mumbai",
       "img1": "https://images.trvl-media.com/hotels/1000000/10000/4800/4772/7218113e.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1887,8 +1964,9 @@
       "price2": "17700"
     },
     {
-      "id": 16,
+      "id": 96,
       "city": "Mumbai",
+      "available": "true",
       "heading1": "Taj Lands End",
       "heading2": "Bandra West",
       "img1": "https://images.trvl-media.com/hotels/1000000/910000/905500/905407/a017801a.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1905,12 +1983,13 @@
       "heading3": "VIP Access",
       "price1": "Rs13,500",
       "price2": "15930"
-    }
-  ],
-  "pune": [
+    },
+ 
+  
     {
-      "id": 1,
+      "id": 97,
       "city": "Pune",
+      "available": "true",
       "heading1": "JW Marriott Hotel Pune",
       "heading2": "Model Colony",
       "img1": "https://images.trvl-media.com/hotels/4000000/3880000/3877900/3877863/040393f6.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1929,8 +2008,9 @@
       "price2": "13570"
     },
     {
-      "id": 2,
+      "id": 98,
       "city": "Pune",
+      "available": "true",
       "heading1": "Conrad Pune by Hilton",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/13000000/12280000/12270500/12270445/3a0dffb7.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1949,8 +2029,9 @@
       "price2": "13570"
     },
     {
-      "id": 3,
+      "id": 99,
       "city": "Pune",
+      "available": "true",
       "heading1": "Sheraton Grand Pune Bund Garden Hotel",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/1000000/520000/519000/518997/da66353e.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1969,8 +2050,9 @@
       "price2": "10620"
     },
     {
-      "id": 4,
+      "id": 100,
       "city": "Pune",
+      "available": "true",
       "heading1": "The Ritz-Carlton, Pune",
       "heading2": "Yerawada",
       "img1": "https://images.trvl-media.com/hotels/40000000/39460000/39453000/39452997/d350173e.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -1989,8 +2071,9 @@
       "price2": "17110"
     },
     {
-      "id": 5,
+      "id": 101,
       "city": "Pune",
+      "available": "true",
       "heading1": "The Westin Pune Koregaon Park",
       "heading2": "Mundhwa",
       "img1": "https://images.trvl-media.com/hotels/4000000/3010000/3003800/3003784/a5fbbb2a.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2009,8 +2092,9 @@
       "price2": "11918"
     },
     {
-      "id": 6,
+      "id": 102,
       "city": "Pune",
+      "available": "true",
       "heading1": "Pride Hotel",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/3f3d7248.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2029,8 +2113,9 @@
       "price2": "6383"
     },
     {
-      "id": 7,
+      "id": 103,
       "city": "Pune",
+      "available": "true",
       "heading1": "Blue Diamond - IHCL SeleQtions",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/1000000/590000/581400/581366/45d553ce.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2049,8 +2134,9 @@
       "price2": "9734"
     },
     {
-      "id": 8,
+      "id": 104,
       "city": "Pune",
+      "available": "true",
       "heading1": "Crowne Plaza Pune City Centre, an IHG Hotel",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/5000000/4520000/4517500/4517481/d7499e6c.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2069,8 +2155,9 @@
       "price2": "6979"
     },
     {
-      "id": 9,
+      "id": 105,
       "city": "Pune",
+      "available": "true",
       "heading1": "Ramee Grand Hotel and Spa, Pune",
       "heading2": "Shivajinagar",
       "img1": "https://images.trvl-media.com/hotels/5000000/4940000/4934900/4934802/7f527357.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2089,8 +2176,9 @@
       "price2": "10833"
     },
     {
-      "id": 11,
+      "id": 106,
       "city": "Pune",
+      "available": "true",
       "heading1": "Fairfield by Marriott Pune Kharadi",
       "heading2": "Kharadi",
       "img1": "https://images.trvl-media.com/hotels/7000000/6650000/6646300/6646235/2dbb2679.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2109,8 +2197,9 @@
       "price2": "6159"
     },
     {
-      "id": 12,
+      "id": 107,
       "city": "Pune",
+      "available": "true",
       "heading1": "Treebo Trip Aura Homes",
       "heading2": "Pimpri - Chinchwad",
       "img1": "https://images.trvl-media.com/hotels/79000000/78650000/78644900/78644802/3b4107fa.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2129,8 +2218,9 @@
       "price2": "2075"
     },
     {
-      "id": 13,
+      "id": 108,
       "city": "Pune",
+      "available": "true",
       "heading1": "Treebo Trend Royalty Hotel",
       "heading2": "Erandwane",
       "img1": "https://images.trvl-media.com/hotels/77000000/76700000/76696900/76696857/6de35c52.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2149,8 +2239,9 @@
       "price2": "3449"
     },
     {
-      "id": 14,
+      "id": 109,
       "city": "Pune",
+      "available": "true",
       "heading1": "Royal Orchid Central Pune",
       "heading2": "Kalyani Nagar",
       "img1": "https://images.trvl-media.com/hotels/2000000/1870000/1868000/1867913/3e13f598.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2169,8 +2260,9 @@
       "price2": "7559"
     },
     {
-      "id": 15,
+      "id": 110,
       "city": "Pune",
+      "available": "true",
       "heading1": "Tarawade Clarks Inn",
       "heading2": "Shivajinagar",
       "img1": "https://images.trvl-media.com/hotels/9000000/8320000/8317500/8317451/da102f18.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2189,8 +2281,9 @@
       "price2": "4031"
     },
     {
-      "id": 16,
+      "id": 111,
       "city": "Pune",
+      "available": "true",
       "heading1": "Hotel Mukesh residency",
       "heading2": "Central Pune",
       "img1": "https://images.trvl-media.com/hotels/75000000/74840000/74835200/74835174/67eb0165.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2209,8 +2302,9 @@
       "price2": "1254"
     },
     {
-      "id": 17,
+      "id": 112,
       "city": "Pune",
+      "available": "true",
       "heading1": "Treebo Trip Hill View Ex",
       "heading2": "Shivajinagar",
       "img1": "https://images.trvl-media.com/hotels/24000000/23370000/23367000/23366952/25406e42.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2229,8 +2323,9 @@
       "price2": "2806"
     },
     {
-      "id": 18,
+      "id": 113,
       "city": "Pune",
+      "available": "true",
       "heading1": "Lemon Tree Premier City Center Pune",
       "heading2": "Central Pune",
       "img1": "https://images.trvl-media.com/hotels/31000000/30680000/30676300/30676271/aad5e24e.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2249,8 +2344,9 @@
       "price2": "9929"
     },
     {
-      "id": 19,
+      "id": 114,
       "city": "Pune",
+      "available": "true",
       "heading1": "Hotel Suyash Deluxe",
       "heading2": "Sadashiv Peth",
       "img1": "https://images.trvl-media.com/hotels/75000000/74840000/74835400/74835321/578c9ab1.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2269,8 +2365,9 @@
       "price2": "1903"
     },
     {
-      "id": 20,
+      "id": 115,
       "city": "Pune",
+      "available": "true",
       "heading1": "Radisson Blu Hotel Pune Kharadi",
       "heading2": "Kharadi",
       "img1": "https://images.trvl-media.com/hotels/4000000/3260000/3257800/3257712/bcd2dd5a.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2289,8 +2386,9 @@
       "price2": "9085"
     },
     {
-      "id": 21,
+      "id": 116,
       "city": "Pune",
+      "available": "true",
       "heading1": "JW Marriott Hotel Pune",
       "heading2": "Model Colony",
       "img1": "https://images.trvl-media.com/hotels/4000000/3880000/3877900/3877863/040393f6.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2309,8 +2407,9 @@
       "price2": "13570"
     },
     {
-      "id": 22,
+      "id": 117,
       "city": "Pune",
+      "available": "true",
       "heading1": "E-Square The Fern An Ecotel Hotel, Pune",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/2000000/1380000/1374200/1374168/ddd0d19c.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2329,8 +2428,9 @@
       "price2": "7271"
     },
     {
-      "id": 23,
+      "id": 118,
       "city": "Pune",
+      "available": "true",
       "heading1": "Sheraton Grand Pune Bund Garden Hotel",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/1000000/520000/519000/518997/da66353e.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2349,8 +2449,9 @@
       "price2": "10620"
     },
     {
-      "id": 24,
+      "id": 119,
       "city": "Pune",
+      "available": "true",
       "heading1": "Oakwood Residence Naylor Road",
       "heading2": "Pune",
       "img1": "https://images.trvl-media.com/hotels/2000000/1690000/1680500/1680407/c21bdf17.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2369,8 +2470,9 @@
       "price2": "6272"
     },
     {
-      "id": 25,
+      "id": 120,
       "city": "Pune",
+      "available": "true",
       "heading1": "Choice Classic Hotel",
       "heading2": "Central Pune",
       "img1": "https://images.trvl-media.com/hotels/32000000/31790000/31782700/31782611/5cff3971.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2389,8 +2491,9 @@
       "price2": "1512"
     },
     {
-      "id": 26,
+      "id": 121,
       "city": "Pune",
+      "available": "true",
       "heading1": "AR Jewel Royale",
       "heading2": "Koregaon Park",
       "img1": "https://images.trvl-media.com/hotels/76000000/75680000/75673700/75673627/f466b222.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2409,8 +2512,9 @@
       "price2": "7168"
     },
     {
-      "id": 27,
+      "id": 122,
       "city": "Pune",
+      "available": "true",
       "heading1": "Treebo Trend Kuval Inn",
       "heading2": "Baner",
       "img1": "https://images.trvl-media.com/hotels/79000000/78570000/78562500/78562499/500c05ff.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2427,104 +2531,127 @@
       "heading3": "50% off",
       "price1": "Rs2,284",
       "price2": "2558"
+    },
+    {
+      "id": 123,
+      "city": "Goa",
+      "heading1": "Grand Hotel Mediterranée",
+      "heading2": "Pegli",
+      "img1": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/b0fe6b88.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      "img2": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/431d2d54.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      "img3": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/2f4dca80.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      "img4": "https://images.trvl-media.com/hotels/1000000/920000/915400/915364/a462fdfc.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      "text1": "Reserve A Luxe Urban Escape",
+      "text2": "2 bedroom, 1 bathroom",
+      "rating": "3.8/5",
+      "review": "Good",
+      "no_of_reviews": "(557 reviews)",
+      "heading3": "We have 2 left at 10% off at",
+      "price1": "Rs7,475",
+      "text4": "Reserve now, pay later",
+      "text3": "Fully refundable",
+      "available": "true",
+      "price2": "8466"
     }
   ],
-  "profile": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "sname": "Preeti",
-      "fname": "Bildani",
-      "password": "fefefe",
-      "email": "Preeti233638@gmail.com",
-      "id": 2
-    },
-    {
-      "sname": "Preetifvasdva",
-      "fname": "Bildanidfawfqa",
-      "password": "fefefe3423",
-      "email": "Preeti23scasfafa3638@gmail.com",
-      "id": 3
-    },
-    {
-      "sname": "Preetifvasdvafwefwe",
-      "fname": "Bildanidfawfqaefefe",
-      "password": "fefefe3423efwef",
-      "email": "Preeti23scasfafa3638@gmail.cofefwefem",
-      "id": 4
-    },
-    {
-      "sname": "Preetifvasdvafwefwe",
-      "fname": "Bildanidfawfqaefefe",
-      "password": "fefefe3423efwef",
-      "email": "Preeti23scasfafa3638@gmail.cofefwefem",
-      "id": 5
-    },
-    {
-      "sname": "1",
-      "fname": "user",
-      "password": "761289746hbj",
-      "email": "user1@gmail.com",
-      "id": 6
-    },
-    {
-      "sname": "Chandra",
-      "fname": "Ayush",
-      "password": "12345",
-      "email": "AyushChandra110720@gmail.com",
-      "id": 7
-    },
-    {
-      "sname": "Preeti",
-      "fname": "Bildani",
-      "password": "12345",
-      "email": "Preeti233638@gmail.com",
-      "id": 8
-    },
-    {
-      "sname": "Chandra",
-      "fname": "Ayush",
-      "password": "123456789",
-      "email": "AyushChandra110720@gmail.com",
-      "id": 9
-    },
-    {
-      "sname": "Karmakar",
-      "fname": "Tarak",
-      "password": "247586",
-      "email": "TarakKarmakar1998@gmail.com",
-      "id": 10
-    },
-    {
-      "sname": "Karmakar",
-      "fname": "Tarak",
-      "password": "5456",
-      "email": "TarakKarmakar1998@gmail.com",
-      "id": 11
-    },
-    {
-      "sname": "Karmakar",
-      "fname": "Tarak",
-      "password": "25655",
-      "email": "TarakKarmakar1998@gmail.com",
-      "id": 12
-    },
-    {
-      "sname": "Karmakar",
-      "fname": "Tarak",
-      "password": "6541465",
-      "email": "TarakKarmakar1998@gmail.com",
-      "id": 13
-    },
-    {
-      "sname": "Karmakar",
-      "fname": "Tarak",
-      "password": "25466",
-      "email": "tarakkarmakar1434@gmail.com",
-      "id": 14
-    }
-  ]
-}
+  
+
+    "profile": [
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+      },
+      {
+        "sname": "Preeti",
+        "fname": "Bildani",
+        "password": "fefefe",
+        "email": "Preeti233638@gmail.com",
+        "id": 2
+      },
+      {
+        "sname": "Preetifvasdva",
+        "fname": "Bildanidfawfqa",
+        "password": "fefefe3423",
+        "email": "Preeti23scasfafa3638@gmail.com",
+        "id": 3
+      },
+      {
+        "sname": "Preetifvasdvafwefwe",
+        "fname": "Bildanidfawfqaefefe",
+        "password": "fefefe3423efwef",
+        "email": "Preeti23scasfafa3638@gmail.cofefwefem",
+        "id": 4
+      },
+      {
+        "sname": "Preetifvasdvafwefwe",
+        "fname": "Bildanidfawfqaefefe",
+        "password": "fefefe3423efwef",
+        "email": "Preeti23scasfafa3638@gmail.cofefwefem",
+        "id": 5
+      },
+      {
+        "sname": "1",
+        "fname": "user",
+        "password": "761289746hbj",
+        "email": "user1@gmail.com",
+        "id": 6
+      },
+      {
+        "sname": "Chandra",
+        "fname": "Ayush",
+        "password": "12345",
+        "email": "AyushChandra110720@gmail.com",
+        "id": 7
+      },
+      {
+        "sname": "Preeti",
+        "fname": "Bildani",
+        "password": "12345",
+        "email": "Preeti233638@gmail.com",
+        "id": 8
+      },
+      {
+        "sname": "Chandra",
+        "fname": "Ayush",
+        "password": "123456789",
+        "email": "AyushChandra110720@gmail.com",
+        "id": 9
+      },
+      {
+        "sname": "Karmakar",
+        "fname": "Tarak",
+        "password": "247586",
+        "email": "TarakKarmakar1998@gmail.com",
+        "id": 10
+      },
+      {
+        "sname": "Karmakar",
+        "fname": "Tarak",
+        "password": "5456",
+        "email": "TarakKarmakar1998@gmail.com",
+        "id": 11
+      },
+      {
+        "sname": "Karmakar",
+        "fname": "Tarak",
+        "password": "25655",
+        "email": "TarakKarmakar1998@gmail.com",
+        "id": 12
+      },
+      {
+        "sname": "Karmakar",
+        "fname": "Tarak",
+        "password": "6541465",
+        "email": "TarakKarmakar1998@gmail.com",
+        "id": 13
+      },
+      {
+        "sname": "Karmakar",
+        "fname": "Tarak",
+        "password": "25466",
+        "email": "TarakKarmakar1998@gmail.com",
+        "id": 14
+      }
+    ]
+  }
