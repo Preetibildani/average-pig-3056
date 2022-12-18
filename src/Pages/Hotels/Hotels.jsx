@@ -13,13 +13,6 @@ import {
   GridItem,
   Heading,
   Image,
-  Popover,
-  PopoverArrow,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverHeader,
-  PopoverTrigger,
   Text,
 } from "@chakra-ui/react";
 
