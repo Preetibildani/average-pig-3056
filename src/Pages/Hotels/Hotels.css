@@ -9,6 +9,8 @@
     width: 100%;
 }
 
+
+/* Filter */
 .filter_heading{
     font-size: 1.25em;
     font-weight: 550;
@@ -24,4 +26,12 @@
 .price{
     font-size: 0.92em;
     font-weight: bold;
+}
+label{
+    font-size: 0.9em;
+    font-weight: 450;
+    margin-left: 10px;
+}
+.btn{
+    
 }
