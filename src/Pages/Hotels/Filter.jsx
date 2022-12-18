@@ -7,7 +7,9 @@ import {
   Heading,
  
   Text,
+
 } from "@chakra-ui/react";
+import "./Hotels.css"
 
 const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
 
@@ -18,16 +20,21 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
 
   return (
     <Box>
-      <Heading>Filter By</Heading>
+      <Text className="filter_heading">Filter By</Text>
       <br />
-      <Text> Popular Filter</Text>
+      <Text className="pop"> Popular Filter</Text>
       {title[city][0].popular.map((el) => {
         return (
           <Flex>
             {/* <input type='checkbox' />
             
             <Text>{el}</Text> */}
-            <Checkbox>{el}</Checkbox>
+            <Checkbox>
+              <Text className="text_fil">
+
+              {el}
+              </Text>
+              </Checkbox>
           </Flex>
         );
       })}

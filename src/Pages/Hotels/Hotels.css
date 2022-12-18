@@ -8,3 +8,16 @@
 {
     width: 100%;
 }
+
+.filter_heading{
+    font-size: 1.25em;
+    font-weight: 550;
+}
+.pop{
+    font-weight: bold;
+    margin-bottom: 1em;
+
+}
+.text_fil{
+    font-size: 14px;
+}
