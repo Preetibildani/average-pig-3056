@@ -1,37 +1,20 @@
-import { Box, Button, Input,
+import { Box, Button, 
     Image ,
     Text,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-    PopoverHeader,
-    PopoverBody,
-    PopoverFooter,
-    PopoverArrow,
-    PopoverCloseButton,
-    PopoverAnchor,
-    ButtonGroup,
     Icon,
-    InputLeftElement,
-    InputGroup,
     CardBody,
     Stack,
     Heading,
-    Divider,
-    CardFooter,
     Card,
     CardHeader,
     SimpleGrid,
-    Select, 
-    HStack,
     Link ,
     StackDivider ,
  } from '@chakra-ui/react';
 import './HotelsCart.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 // import {  MdSettings } from 'react-icons/md';
-import { PhoneIcon ,  } from '@chakra-ui/icons';
-import {MdLocationPin, MdPerson , MdHotTub, MdPool, MdWifi, MdLocalParking, MdFilterVintage, MdSpa, MdRestaurantMenu, MdNetworkWifi, MdCommute, MdDining, MdDataExploration, MdDoneAll, MdFamilyRestroom, MdAtm, MdPeople, MdBed, MdBathtub, MdStar, MdCleaningServices, MdCheck, MdPermContactCalendar } from "react-icons/md";
+import { MdPool, MdWifi, MdLocalParking, MdFilterVintage, MdSpa, MdRestaurantMenu, MdNetworkWifi, MdCommute, MdDining, MdDataExploration, MdDoneAll, MdFamilyRestroom, MdAtm, MdPeople, MdBed, MdBathtub, MdStar, MdCleaningServices, MdCheck, MdPermContactCalendar } from "react-icons/md";
 import axios from 'axios';
 import { RoomCard } from './RoomCard';
 import { HotelCartLists } from './HotelCartLists';

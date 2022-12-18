@@ -1,4 +1,4 @@
-import { Box, Button, Image, Input, Select } from "@chakra-ui/react";
+import { Box, Button, Heading, Image, Input, Select } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -56,9 +56,11 @@ const Adminpanel = () => {
         </h3>
       </div>
       <Filter />
-      <Box w="100%" display={{ md: "flex" }} justifyContent="space-around">
-        <Box W="50%">
-        <div className={styles.form_element_div}>
+      <Box 
+      w="100%" display={{ md: "flex" }} justifyContent="space-around">
+        <Box padding={" 50px 80px"} h="450px" boxShadow='dark-lg'  W="50%">
+        <Heading marginBottom={"20px"}>Add New City</Heading>
+        <div className={"form_element_div"}>
             <Input
               type="text"
               value={product.heading1}
@@ -132,7 +134,7 @@ const Adminpanel = () => {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <Button onClick={handleSubmit}>Add Product</Button>
+            <Button onClick={handleSubmit}>Add City</Button>
           </div>
         </Box>
 
@@ -148,13 +150,13 @@ const Adminpanel = () => {
               {hoteldata.length > 0 &&
                 hoteldata.map((item) => {
                   return (
-                    <Box  marginBottom={'10px'} p='6' rounded='md' bg='white' key={item.id}>
+                    <Box border={"1px solid black"}  marginBottom={'10px'} p='6' rounded='lg' bg='peach' key={item.id}>
                       <Box>
                         <Box>
-                          <Box display={"flex"} justifyContent="space-around" p="10px">
+                          <Box  display={"flex"} justifyContent="space-around" p="10px">
                             {""}
-                            <Image justifyContent={"center"} src={item.img2} alt="" w="25%" />{" "}
-                            <Box>
+                            <Image justifyContent={"flex-end"} src={item.img2} alt="" w="35%" />{" "}
+                            <Box fontSize={"18px"} >
                               {" "}
                               
                               <div>{item.heading1}</div>

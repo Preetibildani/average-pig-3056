@@ -4,22 +4,13 @@ import {
   Button,
   Checkbox,
   Flex,
-  Heading,
- 
-  Input,
- 
   Text,
-
 } from "@chakra-ui/react";
 import "./Hotels.css"
 
 const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
 
  console.log(fitcity)
-
-
-
-
   return (
     <Box>
       <Text className="filter_heading">Filter By</Text>

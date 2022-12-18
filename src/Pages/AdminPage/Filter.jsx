@@ -1,8 +1,9 @@
-import { Box ,Select} from '@chakra-ui/react';
+import { Box ,Button,Image,Menu,MenuButton,MenuItem,MenuList,Select} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { getdata } from '../../Redux/AppReducer/action';
+import {ChevronDownIcon} from "@chakra-ui/icons"
 
 export const Filter = () => {
     
@@ -80,18 +81,49 @@ const [searchParams, setSearchParams] = useSearchParams();
          
     
     <Box  padding={"10px 100px 0px 20px"} onChange={HandleSortBy}>
-    <h2>Sort</h2>
-    <hr></hr>
-        <div>
+{/*     
+    <Select>
+    <option value="">sortBy</option>
+       <option>
+      
+            <input type="radio" value="asc" name='sortBy'
+                defaultChecked={sortBy === "asc"} />
+                 <label >Asc</label>
+     
+       </option>
+       <option>
+       
+         <input type="radio" value="desc" name='sortBy'
+                defaultChecked={sortBy === "desc"} />
+            <label >Desc</label>
+    
+       </option>
+    </Select> */}
+    <Menu  >
+  <MenuButton  marginBottom={"8px"} marginTop={"-11px"} as={Button} rightIcon={<ChevronDownIcon />}>
+   Sort By
+  </MenuButton>
+  <MenuList>
+    <MenuItem minH='48px'>
+      
+    <div>
             <input type="radio" value="asc" name='sortBy'
                 defaultChecked={sortBy === "asc"} />
             <label >Asc</label>
         </div>
-        <div>
+
+    </MenuItem>
+    <MenuItem minH='40px'>
+    <div>
             <input type="radio" value="desc" name='sortBy'
                 defaultChecked={sortBy === "desc"} />
-            <label>Dec</label>
+            <label>Desc</label>
         </div>
+    </MenuItem>
+  </MenuList>
+</Menu>
+       
+        
     </Box>
 
 </Box>

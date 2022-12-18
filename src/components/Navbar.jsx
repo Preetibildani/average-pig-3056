@@ -11,8 +11,8 @@ import { FaBuilding, FaPlane, FaCar, FaShoppingBag, FaGlobe, FaUser,FaBell } fro
 export const NavBar = () => {
     return (
         <>
-        <Container marginBottom={"40px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%">
-        <Box display={"flex"} justifyContent={"space-around"} alignItems={"center"} width={"30%"}>
+        <Container marginTop={"-30px"} marginBottom={"-40px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%">
+        <Box  display={"flex"} justifyContent={"space-around"} alignItems={"center"} width={"30%"}>
         <Link to='/'><Image width={"200px"} src={require('../Images/Logo.png')} /></Link>
         <Show breakpoint="(min-width: 920px)">
             <Menu>

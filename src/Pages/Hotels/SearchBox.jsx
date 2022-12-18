@@ -10,15 +10,15 @@ const SearchBox = () => {
   return (
     <div classna>
    
-<Text className='title_search'> Search by property name</Text>
+<Text  className='title_search'> Search by property name</Text>
        <InputGroup>
-    <InputLeftElement
+    <InputLeftElement marginLeft={"10px"} marginTop={"11px"}
       pointerEvents='none'
       children={<SearchIcon />}
     />
  
 
-    <Input className='inp' type='text' placeholder='eg.Matriot'/>
+    <Input padding={"30px"} fontSize={"19px"} marginLeft={"16px"} className='inp' type='text' placeholder='eg.Matriot'/>
 
   </InputGroup>
  
