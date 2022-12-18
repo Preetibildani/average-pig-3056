@@ -73,12 +73,16 @@ const CheckoutPage = () => {
   //   addTrips();
   // };
 
+  const navigate=useNavigate()
+const confirmed=()=>{
+navigate("/confirmbooking")
+}
   return (
-    <div style={{ backgroundColor: "#f8f5f4" }}>
+    <div style={{ backgroundColor: "yellow" }}>
       <div
-        style={{ width: "100%", height: "auto", backgroundColor: "#f8f5f4" }}
+        style={{ width: "99%", height: "auto", backgroundColor: "#f8f5f4" }}
       >
-        <div style={{ display: "grid", backgroundColor: "#f8f5f4" }}>
+        <div style={{ display: "grid", backgroundColor: "" }}>
           <Box bg={"#f8f5f4"} m="auto" w="80%">
             <Heading m="2" textAlign="left">
               Review and book
@@ -95,7 +99,7 @@ const CheckoutPage = () => {
                   <Box textAlign="left">
                     <Text fontSize="13px" fontWeight="bold">
                       {" "}
-                      Free cancellation before Tue, 22 Nov, 14:00 (property
+                      Free cancellation before Tue, 28 Dec, 18:00 (property
                       local time)
                     </Text>
                     <Text fontSize="13px">
@@ -116,7 +120,7 @@ const CheckoutPage = () => {
                     src="https://play-lh.googleusercontent.com/VobaoI-5uB6DeCqEnyjHBH_RyMGeJk7SE3pLgJPcPZWq09fa-kb5ovWPysenqUkbwA=w240-h480-rw"
                   />
                   <Link color="blue" marginTop="14px">
-                    Sign in to earn 220 Expedia Rewards points
+                    Sign in to earn 56 Expedia Rewards points
                   </Link>
                 </Box>
 
@@ -297,7 +301,7 @@ const CheckoutPage = () => {
                     <Box m={"20px"}>
                       <hr />
                     </Box>
-                    <Text>Create Your Account</Text>
+                    <Text>Create an account</Text>
                     <Box>
                       <Button
                         fontSize={"14px"}
@@ -360,7 +364,7 @@ const CheckoutPage = () => {
                     </Text>
                     <Box marginTop={"20px"} textAlign={"left"}>
                       <Text fontWeight={"bold"}>
-                        Important information about your booking{" "}
+                        Important information {" "}
                       </Text>
                       <Box
                         w={"100%"}
@@ -369,43 +373,19 @@ const CheckoutPage = () => {
                         fontSize={"12px"}
                       >
                         <li>
-                          Cancellations or changes made after 14:00 (property
-                          local time) on 22 Nov 2022 or no-shows are subject to
-                          a property fee equal to 100% of the total amount paid
-                          for the reservation.
+                        Cancellations or changes made after 18:00 (property local time) on 28 
+                        Dec 2022 or no-shows are subject to a property fee equal to 100% of the 
+                        total amount paid for the reservation.
                         </li>
+                      
                         <li>
-                          To make arrangements for check-in please contact the
-                          property ahead of time using the information on the
-                          booking confirmation. If you are planning to arrive
-                          after midnight please contact the property in advance
-                          using the information on the booking confirmation.
-                          Guests must contact the property in advance for
-                          check-in instructions. Front desk staff will greet
-                          guests on arrival. At check-in, guests must provide a
-                          record of full COVID-19 vaccination. Guests providing
-                          vaccine records must have received complete COVID-19
-                          vaccination at least 3 days prior to check-in. For
-                          more details, please contact the property using the
-                          information on the booking confirmation.
+                        The front desk is open daily from 7:00 AM - 11:00 PM.
+                         This property doesn't offer after-hours check-in. 
+                         Front desk staff will greet guests on arrival.
+                          For more details, please contact the property
+                         using the information on the booking confirmation.
                         </li>
-                        <li>
-                          This property requires guests to confirm their
-                          check-out date at check-in. Any modifications to the
-                          check-out date will incur a fee. Early departure fees
-                          apply if notice not provided; not applicable for
-                          non-refundable rates.
-                        </li>
-                        <li>
-                          To register at this property, guests who are Indian
-                          citizens must provide a valid photo identity card
-                          issued by the Government of India; Permanent Account
-                          Number (PAN) cards will not be accepted due to
-                          national regulations. Travelers who are not citizens
-                          of India must present a valid passport and visa.
-                          Indian citizens must show a PAN card at check-out for
-                          cash transactions exceeding INR 25,000.
-                        </li>
+                       
                         <li>
                           Please note that Expedia and the hotel will not issue
                           a tax invoice. You will receive a commercial receipt
@@ -432,13 +412,14 @@ const CheckoutPage = () => {
                           <BsFillCloudCheckFill />{" "}
                           <Text marginLeft={"10px"}>
                             Change of plans? No problem. You can cancel{" "}
-                            <Link> for free before Tue, 22 Nov</Link>{" "}
+                            <Link> for free before Tue, 20 Dec</Link>{" "}
                           </Text>{" "}
                         </Button>
                       </Box>
                       <Button
-                        m={"10px"}
+                        m={"15px"}
                         colorScheme={"yellow"}
+                        onClick={confirmed}
                         // onClick={confirmBooking}
                       >
                         Complete Booking
@@ -471,14 +452,14 @@ const CheckoutPage = () => {
                 <Box margin={"25px"}>
                   <Text>4.8/5 Exceptional (997 reviews)</Text>
                   <Text marginTop={"10px"} fontSize={"13px"}>
-                    Guests rated this property 4.8/5 for cleanliness
+                    Guests rated this property 4.9/5 for cleanliness
                   </Text>
                   <Text marginTop={"15px"}>
-                    {/* {rooms} */}
+                    {/* {rooms} */} Single & Double
                     Room: Superior Room City View
                   </Text>
-                  <Text fontSize={"12px"}>Check-in: Thu, 24 Nov</Text>
-                  <Text fontSize={"12px"}>Check-out: Fri, 25 Nov</Text>
+                  <Text fontSize={"12px"}>Check-in: Thu, 21 Dec</Text>
+                  <Text fontSize={"12px"}>Check-out: Fri, 22 Dec</Text>
                   <Text fontSize={"12px"}>1-night stay</Text>
                 </Box>
 
@@ -488,9 +469,11 @@ const CheckoutPage = () => {
                   <Flex marginTop="20px">
                     <Box>
                       {/* {rooms || 1} */}
-                  1  room x 1 night</Box>
+                  2  room x 1 night</Box>
                     <Spacer />
                     <Box>
+
+                      10,000
                       {/* ₹{price} */}
                       </Box>
                   </Flex>
@@ -498,6 +481,7 @@ const CheckoutPage = () => {
                     <Box>Taxes and service fees</Box>
                     <Spacer />
                     <Box>₹
+                      1800
                       {/* {tax} */}
                       </Box>
                   </Flex>
@@ -510,6 +494,7 @@ const CheckoutPage = () => {
                     <Box>
                       <Text fontWeight={"bold"}>₹
                       {/* {total} */}
+                      11,800
                       </Text>
                     </Box>
                   </Flex>
