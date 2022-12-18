@@ -22,6 +22,8 @@ import SearchBox from "./SearchBox";
 // import Map from "./Map";
 import { NavBar } from './../../components/Navbar';
 import { useNavigate } from "react-router-dom";
+import SearchComponents from "./SearchComponents";
+// import SearchComponents from './SearchComponents';
 
 // m={2} refers to the value of `theme.space[2]`
 
@@ -237,7 +239,7 @@ console.log(city)
 
 
   const getdata = () => {
-    return axios.get(`https://api-knw0.onrender.com/hoteldata?city=${ano.city}`)
+    return axios.get(`https://expediapi.onrender.com/hoteldata?city=${ano.city}`)
 
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
@@ -312,8 +314,8 @@ const handleNavigate = ()=>{
       >
 
         {/* SEARCH COMPONENT HERE */}
-        <GridItem border="1px solid red" area = 'a' >
-          <Box>Search Component</Box>
+        <GridItem  area = 'a' >
+          <Box><SearchComponents /></Box>
         </GridItem>
 <GridItem mt='12'>
 

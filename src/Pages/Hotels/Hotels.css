@@ -32,6 +32,13 @@ label{
     font-weight: 450;
     margin-left: 10px;
 }
-.btn{
-    
+
+
+.inp-sea{
+    border:none,
+
+}
+.btn-sea{
+    border:none;
+    margin-top: 22px;
 }
