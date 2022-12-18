@@ -1,0 +1,47 @@
+.h1 {
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    margin-top: 35px;
+}
+
+.searhChild {
+    height: 20px;
+    padding: 28px;
+    align-items: center;
+}
+
+.img4{
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar ul {
+    float: left;
+}
+
+.navbar {
+    /* border:1px solid red; */
+    margin-top: 30px;
+    height: 50px;
+    position: sticky;
+}
+.navButton {
+    float: right;
+    /* padding: 10px; */
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+.navbar li:hover {
+    border-bottom: 3px solid blue;
+}
+
+.sections {
+    margin-top: 40px;
+}
