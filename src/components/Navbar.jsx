@@ -7,7 +7,7 @@ import { Container, Show, Divider, Text, Image, Box, Button, Menu, MenuButton, M
     PopoverArrow,
     List } from "@chakra-ui/react";
 import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons"
-import { FaBuilding, FaPlane, FaCar, FaShoppingBag, FaGlobe, FaUser,FaBell  } from "react-icons/fa";
+import { FaBuilding, FaPlane, FaCar, FaShoppingBag, FaGlobe, FaUser,FaBell } from "react-icons/fa";
 export const NavBar = () => {
     return (
         <>
