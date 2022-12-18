@@ -7,8 +7,15 @@ import UserLogin from './Login/Login'
 import PaymentPage from './Payment/Payement'
 import CreateAccount from './SignUp/SignUp'
 import Hotels from './Hotels/Hotels';
+
 import Edit from './AdminPage/Edit'
 import Homepage from './Homepage'
+
+
+
+
+
+
 
 const MainRoutes = () => {
     return (

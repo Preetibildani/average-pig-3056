@@ -1,0 +1,27 @@
+.title_search{
+    font-size: 1.25em;
+    letter-spacing:1px;
+
+    font-weight: 550;
+}
+.inp
+{
+    width: 100%;
+}
+
+.filter_heading{
+    font-size: 1.25em;
+    font-weight: 550;
+}
+.pop{
+    font-weight: bold;
+    margin-bottom: 0.92em;
+
+}
+.text_fil{
+    font-size: 14px;
+}
+.price{
+    font-size: 0.92em;
+    font-weight: bold;
+}
