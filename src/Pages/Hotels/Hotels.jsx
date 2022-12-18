@@ -317,19 +317,20 @@ console.log(data)
             <Map />
           </Box>
 {/* >>>>>>> cd50fd9757ab4bc2f548ed28d43b28fd00f45759 */}
-        <hr style={{marginTop:'20px',border:'1px solid gray',boderRadius:'50%'}}/>
+        <hr style={{marginTop:'20px',border:'1px solid black',boderRadius:'50%'}}/>
         </GridItem>
         
         {/* ANOTHER SEARCH COMPONENT */}
-        <GridItem border="1px solid green" w="20em" mt ='10em'   >
+        <GridItem  w="16.5em" mt ='10em' alignItems={'center'}   >
           <SearchBox />
           
 
 
+        <hr style={{marginTop:'20px',border:'1px solid black',boderRadius:'50%'}}/>
         </GridItem>
 
         {/* FILTER */}
-        <GridItem border="1px solid green" w="20em" mt={250}   >
+        <GridItem border="1px solid green" w="20em" mt='2em'   >
           <Filter title = {filterTitle} city ={value} handleInput = {handleInput} value= {price} fitcity={city} fil = {filterByCity} />
           
 
