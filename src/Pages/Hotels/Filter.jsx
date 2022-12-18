@@ -6,6 +6,8 @@ import {
   Flex,
   Heading,
  
+  Input,
+ 
   Text,
 
 } from "@chakra-ui/react";
@@ -40,10 +42,10 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
       })}
       <Box>
         <br />
-        <br />
+        
 
 
-        <Text> Price per night</Text>
+        <Text className="price"> Price per night</Text>
 <p>{value<15000?value:"15000+"}</p>
         <input
           type="range"
@@ -78,6 +80,43 @@ const Filter = ({ title, city ,value,handleInput,fitcity,fil}) => {
         </datalist>
       </Box>
       <br />
+      <br />
+      <Box>
+        <Text className="price">Guest Rating</Text>
+        <Box display={'grid'}>
+
+        <label htmlFor="">
+
+        <input type='radio' />
+      Any
+        </label>
+        <label>
+
+        <input type='radio' />
+      Wonderful
+        </label>
+        <label >
+
+        <input type='radio' />
+      Excellent
+        </label>
+        <label htmlFor="">
+
+        <input type='radio' />
+      Very Good
+        </label>
+        <label htmlFor="">
+
+        <input type='radio' />
+       Good
+        </label>
+        <label htmlFor="">
+
+        <input type='radio' />
+       Execptional
+        </label>
+        </Box>
+      </Box>
       <br />
       <Box>
         <Text>Star Rating</Text>

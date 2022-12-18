@@ -321,7 +321,7 @@ console.log(data)
         </GridItem>
         
         {/* ANOTHER SEARCH COMPONENT */}
-        <GridItem  w="16.5em" mt ='10em' alignItems={'center'}   >
+        <GridItem  w="16.5em" mt ='10.5em' alignItems={'center'}   >
           <SearchBox />
           
 
