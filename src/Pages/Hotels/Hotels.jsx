@@ -7,15 +7,11 @@ import styles from "./Hotels.css";
 // import{Box} from "chakra-ui"
 import {
   Box,
-
   Flex,
   Grid,
   GridItem,
   Heading,
   Image,
-
-
-
   Select,
   Text,
 } from "@chakra-ui/react";
