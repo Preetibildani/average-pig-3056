@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import {update,deleteDataFromCart,edit,getdata,addNewData,getgoadata,getpunedata,getmumbaidata,getdelhidata } from "../../Redux/AppReducer/action";
+import {update,deleteDataFromCart,edit,getdata,addNewData, } from "../../Redux/AppReducer/action";
 import styles from "../AdminPage/AdminPage.module..css";
 // import {addNewData}
 import { Filter } from "./Filter";
@@ -21,6 +21,7 @@ const Adminpanel = () => {
     heading1: "",
     headig2: "",
     image: "",
+    rating:"",
     price1: 0,
     price2: 0,
   });
@@ -162,7 +163,9 @@ const Adminpanel = () => {
                               <div>{item.heading1}</div>
                               <div>{item.headig2}</div>
                               <div>{item.city}  </div>
+                              <div>{item.rating}</div>
                               <div>₹{item.price2} </div>
+                             
                             </Box>{" "}
                           </Box>
                         </Box>

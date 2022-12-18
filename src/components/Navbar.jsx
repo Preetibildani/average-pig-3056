@@ -11,11 +11,12 @@ import { FaBuilding, FaPlane, FaCar, FaShoppingBag, FaGlobe } from "react-icons/
 export const NavBar = () => {
     return (
         <>
-        <Container marginBottom={"40px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%">
+        <Container marginBottom={"-30px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} maxW="82%">
         <Box display={"flex"} justifyContent={"space-around"} alignItems={"center"} width={"30%"}>
-        <Link to='/'><Image width={"200px"} src={require('../Images/Logo.png')} /></Link>
+        <Link to='/'><Image  height={"180px"}
+         width={"200px"} src={require('../Images/Logo.png')} /></Link>
             <Menu>
-                <MenuButton >
+                <MenuButton marginLeft={"-30px"}  width={"130px"}>
                     More Travel <ChevronDownIcon />
                 </MenuButton>
                 <MenuList>
