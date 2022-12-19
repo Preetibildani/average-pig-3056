@@ -22,8 +22,12 @@ import SearchBox from "./SearchBox";
 // import Map from "./Map";
 import { NavBar } from './../../components/Navbar';
 import { useNavigate } from "react-router-dom";
+
 import SearchComponents from "./SearchComponents";
 // import SearchComponents from './SearchComponents';
+
+import Footer1 from "../../components/footer-chakra";
+
 
 // m={2} refers to the value of `theme.space[2]`
 
@@ -286,7 +290,7 @@ console.log(data)
 
 
   return (
-    <Box  >
+    <Box marginLeft={"-10%"} >
       <Box border="1px solid ">
         <NavBar />
          </Box>
@@ -310,9 +314,11 @@ console.log(data)
       >
 
         {/* SEARCH COMPONENT HERE */}
+
         <GridItem  area = 'a' >
           {/* Checking here also */}
           <Box><SearchComponents /></Box>
+
         </GridItem>
 <GridItem mt='12'>
 
@@ -374,7 +380,7 @@ console.log(data)
           {price>0 ?data.filter((item)=>Number(item.price2)<=price || item.heading2===city).map((el, index) => {
 // >>>>>>> cd50fd9757ab4bc2f548ed28d43b28fd00f45759
             return (
-              <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em" onClick={()=>{
+              <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em" padding={"10px"} onClick={()=>{
                 localStorage.setItem("hoteldata",JSON.stringify(el));
                 navigate("/hotelsCart")
               }} >
@@ -439,11 +445,11 @@ console.log(data)
                         <Text fontSize="14px">{el.heading3}</Text>
                       </Box>
                     )}
-                    <Box mt={"4em"} position="absolute" right={122}>
-                      <Heading fontSize={"20"} mr={2}>
+                    <Box padding={"5px"} mt={"4em"}  right={12}>
+                      <Heading  fontSize={"20"} mr={2}>
                         {el.price1}
                       </Heading>
-                      <Text fontSize="13px" mr="2" textAlign="end">
+                      <Text fontSize="13px" mr="2" >
                         per night{" "}
                       </Text>
                       <Text textAlign="end" mr={2} fontSize="13px">
@@ -508,20 +514,21 @@ console.log(data)
                       {el.heading3 && (
                         <Box
                           position="absolute"
-                          right={128}
+                          right={148}
                           border="1px solid"
-                          mt="2em"
-                          w="12em"
+                          mt="1em"
+                          w="9em"
                           textAlign="center"
                           bg="teal"
                           color="white"
                           fontWeight="bold"
-                          borderRadius="50px"
+                          padding="7px 3px"
+                          borderRadius="40px"
                         >
-                          <Text fontSize="14px">{el.heading3}</Text>
+                          <Text fontSize="10px">{el.heading3}</Text>
                         </Box>
                       )}
-                      <Box mt={"4em"} position="absolute" right={122}>
+                      <Box marginLeft={"20%"} mt={"4em"} position="absolute" right={152}>
                         <Heading fontSize={"20"} mr={2}>
                           {el.price1}
                         </Heading>
@@ -532,15 +539,19 @@ console.log(data)
                           {el.price2} total{" "}
                         </Text>
                       </Box>
+                   
                     </Flex>
+                    
                   </Box>
                 </Flex>
               );
             })}
-        
+          
         </GridItem>
       </Grid>
+     
     </Box>
+  
   );
 };
 
