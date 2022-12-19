@@ -284,10 +284,6 @@ console.log(data)
 
   const navigate = useNavigate()//
 
-const handleNavigate = ()=>{
-  console.log("hi")
- 
-}
 
   return (
     <Box  >
@@ -315,6 +311,7 @@ const handleNavigate = ()=>{
 
         {/* SEARCH COMPONENT HERE */}
         <GridItem  area = 'a' >
+          {/* Checking here also */}
           <Box><SearchComponents /></Box>
         </GridItem>
 <GridItem mt='12'>
