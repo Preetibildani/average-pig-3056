@@ -458,7 +458,7 @@ console.log(data)
               return (
                 <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em" onClick={()=>{
                   localStorage.setItem("hoteldata",JSON.stringify(el));
-                  navigate("/payment")
+                  navigate("/hotelsCart")
                 }}>
                   <Flex alignItems="center">
                     {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
