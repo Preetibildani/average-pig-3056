@@ -301,7 +301,7 @@ navigate("/confirmbooking")
                     <Box m={"20px"}>
                       <hr />
                     </Box>
-                    <Text>Create an account</Text>
+                    {/* <Text>Create an account</Text>
                     <Box>
                       <Button
                         fontSize={"14px"}
@@ -361,7 +361,7 @@ navigate("/confirmbooking")
                         in a new window, and Expedia Rewards Terms and
                         Conditions.
                       </Link>{" "}
-                    </Text>
+                    </Text> */}
                     <Box marginTop={"20px"} textAlign={"left"}>
                       <Text fontWeight={"bold"}>
                         Important information {" "}
