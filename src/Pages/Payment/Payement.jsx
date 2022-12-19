@@ -447,10 +447,12 @@ navigate("/confirmbooking")
               >
                 <Image
                   w={"100%"}
-                  src="https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/1ac59945_l.jpg"
+                  src="https://images.trvl-media.com/hotels/1000000/540000/531700/531648/0be7b7bd.jpg?impolicy=resizecrop&rw=455&ra=fit"
                 />
                 <Box margin={"25px"}>
-                  <Text>4.8/5 Exceptional (997 reviews)</Text>
+
+                 <h1>Le Meridien New Delhi</h1>
+                  <Text>4.3/5 Exceptional (523 reviews)</Text>
                   <Text marginTop={"10px"} fontSize={"13px"}>
                     Guests rated this property 4.9/5 for cleanliness
                   </Text>
@@ -473,7 +475,7 @@ navigate("/confirmbooking")
                     <Spacer />
                     <Box>
 
-                      10,000
+                   8,650
                       {/* ₹{price} */}
                       </Box>
                   </Flex>
@@ -481,7 +483,7 @@ navigate("/confirmbooking")
                     <Box>Taxes and service fees</Box>
                     <Spacer />
                     <Box>₹
-                      1800
+                    1,548
                       {/* {tax} */}
                       </Box>
                   </Flex>
@@ -494,7 +496,7 @@ navigate("/confirmbooking")
                     <Box>
                       <Text fontWeight={"bold"}>₹
                       {/* {total} */}
-                      11,800
+                   10,198
                       </Text>
                     </Box>
                   </Flex>
