@@ -58,7 +58,7 @@ const GotoHome = () => {
         regarding your trip details.
       </p>
       <p style={{ fontWeight: "bold" }}>Thank Your For Choosing Expedia.</p>
-      <button  onClick={handleClick}>
+      <button style={{background:"#1eaaf1",color:"white", width:"17%" ,borderRadius:"2rem"}} onClick={handleClick}>
         Continue Booking
       </button>
 
