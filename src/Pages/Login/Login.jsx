@@ -65,7 +65,7 @@ export default function Login() {
         isClosable: true,
       });
       setTimeout(() => {
-        navigate("/");
+        navigate("/payment");
       }, 1500);
     }
   }, [isAuth, navigate, toast]);
@@ -190,7 +190,7 @@ export default function Login() {
             isRequired
           >
             <FormHelperText mb={"8px"}>
-              Save an average of 15% on thousands of hotels as a member—it’s
+              Save an average of 15% on thousands of hotel as a member—it’s
               always free
             </FormHelperText>
 
