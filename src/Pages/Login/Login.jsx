@@ -156,7 +156,7 @@ export default function Login() {
     <>
       <Flex border="1px" color="black" alignItems="center">
         <ArrowBackIcon color="blue" boxSize={6} onClick={GotoHome} />
-        <Image marginLeft="41%" boxSize="17%" src={logo} alt="" />
+        <Image marginLeft="41%" boxSize="12%" src={logo} alt="" />
       </Flex>
 
       {isLoading ? (

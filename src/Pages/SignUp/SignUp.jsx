@@ -111,7 +111,7 @@ const [surname,setSurname]=useState("")
       ) : (  <>
           <Flex border="1px" color="black" alignItems="center">
             <ArrowBackIcon color="blue" boxSize={6} onClick={GotoHome} />
-            <Image marginLeft="41%" boxSize="16%" src={logo} alt="" />
+            <Image marginLeft="41%" boxSize="12%" src={logo} alt="" />
           </Flex>
 
           <Flex
