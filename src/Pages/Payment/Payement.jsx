@@ -471,7 +471,7 @@ navigate("/confirmbooking")
                   <Flex marginTop="20px">
                     <Box>
                       {/* {rooms || 1} */}
-                  2  room x 1 night</Box>
+                  1  room x 1 night</Box>
                     <Spacer />
                     <Box>
 

@@ -264,7 +264,7 @@ export  const HotelsCart = () => {
     },[])
 
     if(reserveRoom){
-        return <Navigate to='/payment' />
+        return <Navigate to='/login' />
     }
 
 return <div>
