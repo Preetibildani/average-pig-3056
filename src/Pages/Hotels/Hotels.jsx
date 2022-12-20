@@ -22,7 +22,12 @@ import SearchBox from "./SearchBox";
 // import Map from "./Map";
 import { NavBar } from './../../components/Navbar';
 import { useNavigate } from "react-router-dom";
+
+import SearchComponents from "./SearchComponents";
+// import SearchComponents from './SearchComponents';
+
 import Footer1 from "../../components/footer-chakra";
+
 
 // m={2} refers to the value of `theme.space[2]`
 
@@ -238,7 +243,7 @@ console.log(city)
 
 
   const getdata = () => {
-    return axios.get(`https://api-knw0.onrender.com/hoteldata?city=${ano.city}`)
+    return axios.get(`https://expediapi.onrender.com/hoteldata?city=${ano.city}`)
 
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
@@ -283,10 +288,6 @@ console.log(data)
 
   const navigate = useNavigate()//
 
-const handleNavigate = ()=>{
-  console.log("hi")
- 
-}
 
   return (
     <Box marginLeft={"-10%"} >
@@ -313,8 +314,11 @@ const handleNavigate = ()=>{
       >
 
         {/* SEARCH COMPONENT HERE */}
-        <GridItem marginTop={"20px"} border="1px solid silver" width={"16%"} area = 'a' >
-          <Box textAlign={"center"}>Search Component</Box>
+
+        <GridItem  area = 'a' >
+          {/* Checking here also */}
+          <Box><SearchComponents /></Box>
+
         </GridItem>
 <GridItem mt='12'>
 
@@ -378,7 +382,7 @@ const handleNavigate = ()=>{
             return (
               <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em" padding={"10px"} onClick={()=>{
                 localStorage.setItem("hoteldata",JSON.stringify(el));
-                navigate("/cart")
+                navigate("/hotelsCart")
               }} >
                 <Flex alignItems="center">
                   {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
@@ -460,7 +464,7 @@ const handleNavigate = ()=>{
               return (
                 <Flex key={el.id} boxShadow="lg" borderRadius="20px" mt="2.8em" onClick={()=>{
                   localStorage.setItem("hoteldata",JSON.stringify(el));
-                  navigate("/payment")
+                  navigate("/hotelsCart")
                 }}>
                   <Flex alignItems="center">
                     {/* <ChevronLeftIcon fontSize='2xl' borderRadius='50px' bg='black'/> */}
