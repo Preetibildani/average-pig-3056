@@ -1,5 +1,8 @@
-# Clone of Expedia
+# Clone of Expedia:
 ### Expedia is one of the fastest growing online travel portals in Asia, offering travellers an extensive selection of hotels, activities and travel services to meet every budget and activities of every kind at competitive rates.
+
+# Live link:
+https://average-pig-3056.vercel.app/
 
 
 ## 🛠 Tech Stack :
