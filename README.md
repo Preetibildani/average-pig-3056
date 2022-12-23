@@ -12,6 +12,11 @@ https://average-pig-3056.vercel.app/
 
 
 ## Features
+1.Login Authenication
+2.Hotel rooms
+3.Detail of rooms
+4.Payment auth
+5.Admin panel
 
 
 
