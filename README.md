@@ -55,6 +55,14 @@ Start the server
 # Book Hotels
 ![Screenshot (327)](https://user-images.githubusercontent.com/110048573/211344015-fa536e95-5cb2-487d-ab22-fc66f7af2a05.png)
 
+#Hotels Rooms
+
+#Cart Page
+
+#Payment Page
+
+##Admin panel
+
 ## Feedback
 
 If you have any feedback, please reach out to us.
