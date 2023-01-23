@@ -49,19 +49,19 @@ Start the server
 # Home
 ![Screenshot (327)](https://user-images.githubusercontent.com/110048573/211343946-93e06981-0a82-418a-9c12-3073f6df084e.png)
 
-#sign Up or Login
+# sign Up or Login
 ![Screenshot (329)](https://user-images.githubusercontent.com/110048573/211343985-69a4fc21-c3ee-459d-9ad7-dd719ec47ec7.png)
 
 # Book Hotels
 ![Screenshot (327)](https://user-images.githubusercontent.com/110048573/211344015-fa536e95-5cb2-487d-ab22-fc66f7af2a05.png)
 
-#Hotels Rooms
+# Hotels Rooms
 
-#Cart Page
+# Cart Page
 
-#Payment Page
+# Payment Page
 
-##Admin panel
+## Admin panel
 
 ## Feedback
 
