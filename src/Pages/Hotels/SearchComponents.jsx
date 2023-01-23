@@ -16,12 +16,6 @@ const SearchComponents = () => {
 Going to
     <Input className='inp-sea' type='text' placeholder='Enter Place' />
 </label>
-    
- 
-
-
-
-
             </Box>
             <Box className='topSearch'>
                 <label>
