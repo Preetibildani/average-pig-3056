@@ -56,6 +56,7 @@ Start the server
 ![Screenshot (327)](https://user-images.githubusercontent.com/110048573/211344015-fa536e95-5cb2-487d-ab22-fc66f7af2a05.png)
 
 # Hotels Rooms
+!(https://average-pig-3056.vercel.app/hotels)
 
 # Cart Page
 
