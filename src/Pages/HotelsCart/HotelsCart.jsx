@@ -12,7 +12,7 @@ import { Box, Button,
     StackDivider ,
  } from '@chakra-ui/react';
 import './HotelsCart.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import {  MdSettings } from 'react-icons/md';
 import { MdPool, MdWifi, MdLocalParking, MdFilterVintage, MdSpa, MdRestaurantMenu, MdNetworkWifi, MdCommute, MdDining, MdDataExploration, MdDoneAll, MdFamilyRestroom, MdAtm, MdPeople, MdBed, MdBathtub, MdStar, MdCleaningServices, MdCheck, MdPermContactCalendar } from "react-icons/md";
 import axios from 'axios';
@@ -20,7 +20,8 @@ import { RoomCard } from './RoomCard';
 import { HotelCartLists } from './HotelCartLists';
 import { NavBar } from '../../components/Navbar';
 import Footer1 from '../../components/footer-chakra';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const roomsArr = [
     {
@@ -249,11 +250,16 @@ const AmenitiesArr = [
 
 
 export  const HotelsCart = () => {
+    const { isAuth } = useSelector((state) => {
+        return {
+          isAuth: state.signUpReducer.isAuth,
+        };
+      });
     const [reserveRoom,setReserveRoom] = useState(false);
     const initialFocusRef = React.useRef();
     // const [id,setId] = useState(0);
     const [single,setSingle] = React.useState({});
-
+const navigate=useNavigate()
     const getdata = () =>{
         const user = JSON.parse(localStorage.getItem('hoteldata'));
         setSingle(user);
@@ -262,10 +268,16 @@ export  const HotelsCart = () => {
     React.useEffect(()=>{
         getdata();
     },[])
-
-    if(reserveRoom){
-        return <Navigate to='/login' />
+useEffect(()=>{
+    if(isAuth && reserveRoom){
+        navigate("/payment")
+    }else if(isAuth==false && reserveRoom==true){
+        navigate("/login")
     }
+
+},[reserveRoom,isAuth])
+   
+   
 
 return <div>
     <NavBar/>

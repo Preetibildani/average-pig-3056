@@ -16,7 +16,10 @@
 }
 .HpBody > img{
     width: 350px;
+    height: 70%;
     border-radius: 20px;
+    display: block;
+    margin-right: 1%;
 }
 .firstDiv{
     width: 500px;
@@ -54,26 +57,32 @@ margin-bottom: 10px;
     font-weight: 600;
 }
 .HpBody > div > img{
-    width: 320px;
-    height: 200px;
+    width: 70%;
+   display:block;
+   margin: auto;
+}
+.image_con_qr{
+    margin: auto;
+    width: 20%;
+  
 }
 .Card_Img{
     width: 80%;
-    height: 500px;
+height: 70vh;
     border-radius: 20px;
     margin: auto;
     color: #343b53;
     margin-bottom: 80px;
     position: relative;
+    background-size: 100% 100%;
+    background-image: url("https://a.travel-assets.com/travel-assets-manager/ceorg-2118/HP-Hero-D-928x398.jpg");
 }
-.Card_Img > img{
-    border-radius: 5px;
-    height: 100%;
-}
+
 .Card_Img > div{
     position: absolute;
     top: 10%;
     left: 15%;
+    margin: auto;
     color: white;
     width: 400px;
 }
@@ -92,6 +101,7 @@ margin-bottom: 10px;
 .Card_Img > div >button:hover{
     background-color: rgb(41, 75, 166); 
 }
+
 @media screen and (max-width: 996px){
     .HpBody > div:last-child{
         display: none;
@@ -103,7 +113,13 @@ margin-bottom: 10px;
         font-size: 15px;
     }
     .firstDiv{
-        width: 300px;
+        width: 50%;
+    }
+    .HpBody>img{
+        height: 70%;
+    }
+    .Card_Img{
+     height: 60vh;
     }
   }
 @media screen and (max-width: 780px){
@@ -122,6 +138,9 @@ margin-bottom: 10px;
         align-items: center;
         margin-bottom: 20px;
     }
+    .Card_Img{
+        height: 50vh;
+       }
   }
 @media screen and (max-width: 480px){
 
@@ -145,6 +164,9 @@ margin-bottom: 10px;
         font-size: 10px;
         margin-top: 10px;
     }
+    .Card_Img{
+        height: 40vh;
+       }
   }
 
   
