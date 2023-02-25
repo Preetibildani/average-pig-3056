@@ -5,7 +5,7 @@ const HPBody = () => {
 return(
     <>
     <div className={styles.Card_Img}>
-        <img src="https://a.travel-assets.com/travel-assets-manager/ceorg-2118/HP-Hero-D-928x398.jpg" alt="" />
+        <img src="" alt="" />
         <div className={styles.card_para} >
             <h1>Top bucket list<br></br> trips</h1>
             <p>From the Amalfi Coast to Patagonia, make 2023 your best travel year, and save more as a member.</p>
@@ -34,8 +34,10 @@ return(
             <button marginRight={"-30px"} >Get the App</button>
             <p fontSize={"16px"} >Get a link to download the app in the Apple App Store or Google Play Store. 1 message per request. Message and data rates may apply. Text HELP for help or STOP to unsubscribe. Review the App Download SMS terms at www.expedia.com/app. For privacy, please go to www.expedia.com/lp/lg-privacypolicy.</p>
         </div>
-        <div >
-            <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/BEX-HP-CONTROL-27.png" alt="" />
+        <div className={styles.image_con_qr} >
+            <img className={styles.Qr_code} 
+            src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/BEX-HP-CONTROL-27.png" 
+            alt="" />
             <p>Scan the QR code</p>
         </div>
     </div>
