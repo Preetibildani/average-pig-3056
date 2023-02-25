@@ -65,7 +65,7 @@ export default function Login() {
         isClosable: true,
       });
       setTimeout(() => {
-        navigate("/payment");
+        navigate("/");
       }, 1500);
     }
   }, [isAuth, navigate, toast]);
